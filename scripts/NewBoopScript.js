@@ -2,7 +2,7 @@
 	{
 		"api":1,
 		"name":"New Boop Script",
-		"description":"Returns a basic Boop script.",
+		"description":"Inserts a template for creating new Flxify scripts",
 		"author":"tlewis",
 		"icon":"quote",
 		"tags":"boop,state,script,debug,new,create"
@@ -11,7 +11,11 @@
 
 function main(state) {
 	try {
-		state.text = script
+		if (state.isSelection) {
+			state.text = script;
+		} else {
+			state.insert(script);
+		}
 	}
 	catch(error) {
 		state.postError("Something strange happened here...")

@@ -2,7 +2,7 @@
 	{
 		"api":1,
 		"name":"Join Lines With Space",
-		"description":"Joins all lines with a space",
+		"description":"Joins all lines together separated by spaces",
 		"author":"riesentoaster",
 		"icon":"collapse",
 		"tags":"join, space",

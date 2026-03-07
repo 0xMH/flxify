@@ -2,7 +2,7 @@
 	{
 		"api":1,
 		"name":"Format JSON",
-		"description":"Cleans and format JSON documents.",
+		"description":"Formats JSON with proper indentation and validates syntax",
 		"author":"Ivan",
 		"icon":"broom",
 		"tags":"json,prettify,clean,indent"

@@ -2,7 +2,7 @@
 {
   "api": 1,
   "name": "Fish PATH Hex Converter",
-  "description": "Escapes terminal characters.",
+  "description": "Escapes special characters to hex for Fish shell PATH variables",
   "author": "Paul Seelman",
   "icon": "broom",
   "tags": "fish_user_paths, fish, hex, ascii, path, var"

@@ -2,7 +2,7 @@
   {
     "api": 1,
     "name": "Extract Emails",
-    "description": "Extracts all email addresses from your text",
+    "description": "Extracts all unique email addresses from text, one per line",
     "author": "Flxify",
     "icon": "envelope",
     "tags": "email,extract,address,scrape"

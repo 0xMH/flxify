@@ -2,7 +2,7 @@
 	{
 		"api":1,
 		"name":"Reverse Lines",
-		"description":"Flips every line of your text.",
+		"description":"Reverses the order of lines (last line becomes first)",
 		"author":"@Clarko",
 		"icon":"flip",
 		"tags":"reverse,order,invert,mirror,flip,upside,down"

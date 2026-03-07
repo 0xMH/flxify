@@ -2,7 +2,7 @@
   {
     "api":1,
     "name":"TSV to JSON",
-    "description":"Converts TSV to JSON",
+    "description":"Converts tab-separated values to JSON array of objects",
     "author":"Quddus George",
     "icon":"table",
     "tags":"tab, tsv, json, table"

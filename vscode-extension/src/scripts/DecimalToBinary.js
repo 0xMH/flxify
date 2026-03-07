@@ -2,7 +2,7 @@
  {
    "api": 1,
    "name": "Decimal to Binary",
-   "description": "Converts decimal values to binary.",
+   "description": "Converts decimal numbers to binary, processing each line separately",
    "author": "Maurice",
    "icon": "metamorphose",
    "tags": "decimal,binary,dec,bin"

@@ -3,7 +3,7 @@
   {
     "api":1,
     "name":"From string from unicode scaped",
-    "description":"Returns a readable string from the unicode scaped string (js format)",
+    "description":"Decodes Unicode escape sequences (\\uXXXX) to readable text",
     "author":"luisfontes19",
     "icon":"broom",
     "tags":"string,normalize,convert,readable,unicode"

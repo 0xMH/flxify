@@ -2,7 +2,7 @@
     {
         "api":1,
         "name":"Lorem Ipsum",
-        "description":"Generates Lorem Ipsum placeholder text.",
+        "description":"Generates random Lorem Ipsum placeholder text (100 words)",
         "author":"luisfontes19",
         "icon":"type",
         "tags":"generate,lorem,ipsum,text",
@@ -22,5 +22,9 @@ function main(state) {
 
     sentence = sentence.charAt(0).toUpperCase() + sentence.slice(1).trim() + ".";
 
-    state.text = sentence;
+    if (state.isSelection) {
+        state.text = sentence;
+    } else {
+        state.insert(sentence);
+    }
 }

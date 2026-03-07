@@ -2,7 +2,7 @@
     {
         "api":1,
         "name":"Remove Duplicate Lines",
-        "description":"Ensures each line of your text is unique.",
+        "description":"Removes duplicate lines, keeping only the first occurrence of each",
         "author":"andipaetzold",
         "icon":"filtration",
         "tags":"unique,duplicate"

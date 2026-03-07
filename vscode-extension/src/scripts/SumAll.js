@@ -2,7 +2,7 @@
 	{
 		"api":1,
 		"name":"Sum All",
-		"description":"Sums up a list of numbers.",
+		"description":"Sums all numbers in text and displays calculation with total",
 		"author":"Annie Tran",
 		"icon":"abacus",
 		"tags":"sum,calculator,addition,add"

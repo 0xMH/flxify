@@ -2,7 +2,7 @@
 	{
 		"api":1,
 		"name":"Join Lines With Comma",
-		"description":"Joins all lines with a comma.",
+		"description":"Joins all lines together separated by commas",
 		"author":"riesentoaster",
 		"icon":"collapse",
 		"tags":"join, comma",

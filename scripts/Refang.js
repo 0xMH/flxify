@@ -2,7 +2,7 @@
   {
     "api":1,
     "name":"Refang",
-    "description":"Removes defanging from dangerous URLs and other IOCs",
+    "description":"Restores defanged URLs to clickable format (reverses defang operation)",
     "author":"Ross",
     "icon":"link",
     "tags":"refang,url,ioc"

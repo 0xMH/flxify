@@ -2,7 +2,7 @@
 	{
 		"api":1,
 		"name":"Wadsworth Constant",
-		"description":"first 30% of your text.",
+		"description":"Removes first 30% of text (Wadsworth Constant: skip boring intro)",
 		"author":"Ivan",
 		"icon":"scissors",
 		"tags":"snap"

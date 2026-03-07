@@ -2,7 +2,7 @@
 	{
 		"api":1,
 		"name":"Camel Case",
-		"description":"convertsYourTextToCamelCase",
+		"description":"Converts text to camelCase format, removing spaces and capitalizing words",
 		"author":"Ivan",
 		"icon":"camel",
 		"tags":"camel,case,function,lodash"

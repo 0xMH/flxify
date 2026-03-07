@@ -2,7 +2,7 @@
 	{
 		"api":1,
 		"name":"Date to UTC",
-		"description":"Converts dates and timestamps to UTC dates",
+		"description":"Converts date strings or Unix timestamps to UTC format",
 		"author":"Ivan",
 		"icon":"watch",
 		"tags":"date,time,calendar,unix,timestamp"

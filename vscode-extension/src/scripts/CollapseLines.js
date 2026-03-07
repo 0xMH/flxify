@@ -2,7 +2,7 @@
     {
         "api":1,
         "name":"Collapse lines",
-        "description":"Removes all linebreaks from your text",
+        "description":"Removes all line breaks, joining text into a single line",
         "author":"Dennis",
         "icon":"collapse",
         "tags":"strip,remove,collapse,join"

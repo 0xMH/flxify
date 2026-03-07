@@ -2,7 +2,7 @@
   {
     "api":1,
     "name":"Sort JSON",
-    "description":"Sort JSON",
+    "description":"Sorts JSON object keys alphabetically and array elements",
     "author":"MaDnh",
     "icon":"sort-characters",
     "tags":"json,sort"

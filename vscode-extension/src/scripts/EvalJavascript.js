@@ -2,7 +2,7 @@
      {
          "api":1,
          "name":"Eval Javascript",
-         "description":"Runs your text as Javascript Code.",
+         "description":"Executes JavaScript code and appends the output as a comment",
          "author":"Sebastiaan Besselsen",
          "icon":"command",
          "tags":"js,script,run"

@@ -2,7 +2,7 @@
 	{
 		"api":1,
 		"name":"HTML Encode",
-		"description":"Encodes HTML entities in your text",
+		"description":"Encodes special characters to HTML entities (e.g., & to &amp;)",
 		"author":"See Source",
 		"icon":"HTML",
 		"tags":"html,encode,web"

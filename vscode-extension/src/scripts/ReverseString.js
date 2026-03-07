@@ -2,7 +2,7 @@
 	{
 		"api":1,
 		"name":"Reverse String",
-		"description":"!seod ti tahw sseuG",
+		"description":"Reverses character order in text (supports Unicode and emoji)",
 		"author":"See Source",
 		"icon":"flip",
 		"tags":"flip,mirror,invert"

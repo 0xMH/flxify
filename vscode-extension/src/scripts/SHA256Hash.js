@@ -2,7 +2,7 @@
     {
         "api":1,
         "name":"SHA256 Hash",
-        "description":"Computes the SHA256 hash of your text (Hex encoded)",
+        "description":"Generates SHA256 hash of text in hexadecimal format",
         "icon":"fingerprint",
         "tags":"strip,slashes,remove"
     }

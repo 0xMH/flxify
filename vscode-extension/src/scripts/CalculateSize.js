@@ -2,7 +2,7 @@
 {
   "api": 1,
   "name": "Calculate Size (Bytes)",
-  "description": "Calculates size of text in Bytes",
+  "description": "Calculates UTF-8 byte size of text and displays in bytes, KB, or MB",
   "author": "zzz",
   "icon": "counter",
   "tags": "calc,size,bytes,storage"

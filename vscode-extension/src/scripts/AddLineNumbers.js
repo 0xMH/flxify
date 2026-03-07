@@ -2,7 +2,7 @@
   {
     "api": 1,
     "name": "Add Line Numbers",
-    "description": "Adds line numbers to each line of your text",
+    "description": "Prepends line numbers to each line with aligned spacing",
     "author": "Flxify",
     "icon": "list-ol",
     "tags": "line,number,prefix,count,add"

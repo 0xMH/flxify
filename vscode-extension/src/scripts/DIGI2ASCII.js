@@ -2,7 +2,7 @@
 {
   "api": 1,
   "name": "Digi to ASCII",
-  "description": "Digi to ASCII",
+  "description": "Converts space or comma-separated ASCII codes to text characters",
   "author": "Joseph Ng Rong En",
   "icon": "dice",
   "tags": "ascii,digi"

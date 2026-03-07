@@ -2,7 +2,7 @@
      {
          "api":1,
          "name":"Sort lines",
-         "description":"Sort lines alphabetically.",
+         "description":"Sorts lines alphabetically (toggles reverse if already sorted)",
          "author":"Sebastiaan Besselsen",
          "icon":"sort-characters",
          "tags":"sort,alphabet"

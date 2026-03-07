@@ -2,7 +2,7 @@
 	{
 		"api":1,
 		"name":"Trim End",
-		"description":"Trims trailing whitespace.",
+		"description":"Removes whitespace from the end of text",
 		"author":"Joshua Nozzi",
 		"icon":"scissors",
 		"tags":"trim,end,right,trailing,whitespace,empty,space",

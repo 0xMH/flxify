@@ -2,7 +2,7 @@
   {
     "api":1,
     "name":"JWT Decode",
-    "description":"Converts JWTs to JSON",
+    "description":"Decodes JWT tokens and displays header, payload, and signature as JSON",
     "author":"Nils Sonemann",
     "icon":"identification",
     "tags":"decode,jwt,token"

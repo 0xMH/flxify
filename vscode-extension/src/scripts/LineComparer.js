@@ -2,7 +2,7 @@
     {
         "api":1,
         "name":"Line compare",
-        "description":"Check if existing lines have all the same content",
+        "description":"Checks if all lines match the first line and reports differences",
         "author":"Luis Fontes",
         "icon":"type",
         "tags":"string,match,text,compare,line",

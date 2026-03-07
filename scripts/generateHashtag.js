@@ -2,7 +2,7 @@
 {
   "api": 1,
   "name": "Generate hashtag",
-  "description": "Generate hashtag from a word or sentence",
+  "description": "Converts text to camelCase hashtag format by removing special characters",
   "author": "Armand Salle",
   "icon": "metamorphose",
   "tags": "hashtag,word"

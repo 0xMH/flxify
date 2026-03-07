@@ -2,7 +2,7 @@
 {
   "api": 1,
   "name": "Sponge Case",
-  "description": "CoNvERtS yoUR Text To A HIghER fOrM Of CoMMUnICAtIOn",
+  "description": "Randomly alternates uppercase and lowercase letters for sarcastic mocking",
   "author": "Paul Seelman",
   "icon": "pineapple",
   "tags": "bob,sarcasm,no,this,is,patrick"

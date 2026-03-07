@@ -125,3 +125,5 @@ Alternative (skip login): `npx @vscode/vsce publish --pat <YOUR_PAT>`
 11. **Icon must be exactly 128x128 PNG.** Generated from web app's logo.png via: `sips -c 768 768 logo.png --out icon.png && sips -z 128 128 icon.png`. The crop centers the image before resizing.
 
 12. **`Cmd+Shift+B` overrides VS Code's "Run Build Task".** The keybinding uses `"when": "editorTextFocus"` to scope it, but power users may still conflict. Document how to rebind via Keyboard Shortcuts.
+
+13. **Generator scripts must use `state.insert()`, not `state.text =`.** Scripts that generate new content (UUID Generator, Lorem Ipsum, New Boop Script) must check `state.isSelection` before writing. If text is selected, use `state.text = result` to replace the selection. If no text is selected, use `state.insert(result)` to insert at the cursor position. Using `state.text = result` with no selection replaces the entire document, which destroys existing editor content. Transform scripts (Upper Case, Sort Lines, Format JSON, etc.) should continue using `state.text = result` because they read and transform the full text.

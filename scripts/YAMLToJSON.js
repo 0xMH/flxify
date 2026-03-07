@@ -2,7 +2,7 @@
 	{
 		"api":1,
 		"name":"YAML to JSON",
-		"description":"Converts YAML to JSON.",
+		"description":"Converts YAML format to JSON",
 		"author":"Ivan",
 		"icon":"metamorphose",
 		"tags":"markup,convert"

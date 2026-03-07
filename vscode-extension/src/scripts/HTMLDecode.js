@@ -2,7 +2,7 @@
 	{
 		"api":1,
 		"name":"HTML Decode",
-		"description":"Decodes HTML entities in your text",
+		"description":"Decodes HTML entities to readable characters (e.g., &amp; to &)",
 		"author":"See Source",
 		"icon":"HTML",
 		"tags":"html,decode,web"

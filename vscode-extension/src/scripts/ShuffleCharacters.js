@@ -2,7 +2,7 @@
 {
   "api": 1,
   "name": "Shuffle characters",
-  "description": "Shuffles characters randomly",
+  "description": "Randomly shuffles all characters in text",
   "author": "Christian Petersen",
   "icon": "dice",
   "tags": "shuffle,random,character,char"

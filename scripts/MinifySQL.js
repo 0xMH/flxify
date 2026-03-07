@@ -2,7 +2,7 @@
 	{
 		"api":1,
 		"name":"Minify SQL",
-		"description":"Cleans and minifies SQL queries.",
+		"description":"Removes whitespace and comments to compress SQL queries",
 		"author":"Ivan",
 		"icon":"broom",
 		"tags":"mysql,sql,minify,clean,indent",

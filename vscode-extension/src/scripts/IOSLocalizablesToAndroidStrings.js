@@ -2,7 +2,7 @@
   {
     "api":1,
     "name":"iOS Localizables to Android Strings",
-    "description":"Converts iOS Localizables to Android Strings",
+    "description":"Converts iOS Localizable.strings format to Android strings.xml format",
     "author":"Manuel Kunz (https://github.com/KunzManuel)",
     "icon":"translation",
     "tags":"string,android,ios"

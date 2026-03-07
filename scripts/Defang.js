@@ -2,7 +2,7 @@
   {
     "api":1,
     "name":"Defang",
-    "description":"Defangs dangerous URLs and other IOCs",
+    "description":"Makes URLs non-clickable by replacing dots and protocols for safe sharing",
     "author":"Ross",
     "icon":"link",
     "tags":"defang,url,ioc"

@@ -2,7 +2,7 @@
 	{
 		"api":1,
 		"name":"Join Lines",
-		"description":"Joins all lines without any delimiter.",
+		"description":"Joins all lines together with no separator or delimiter",
 		"author":"riesentoaster",
 		"icon":"collapse",
 		"tags":"join"

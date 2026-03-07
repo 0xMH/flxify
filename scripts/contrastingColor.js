@@ -2,7 +2,7 @@
 {
     "api": 1,
     "name": "Contrasting Color",
-    "description": "Determine whether black or white contrasts better with the given color(s) (one per line).",
+    "description": "Determines best contrasting text color (black/white) for hex colors with WCAG ratios",
     "author": "Sunny Walker",
     "icon": "color-wheel",
     "tags": "contrast,color,wcag"

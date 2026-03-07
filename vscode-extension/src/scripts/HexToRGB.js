@@ -2,7 +2,7 @@
      {
          "api":1,
          "name":"Hex to RGB",
-         "description":"Convert color in hexadecimal to RGB.",
+         "description":"Converts hex color codes to RGB format (e.g., #FF5733 to 255,87,51)",
          "author":"Venkat",
          "icon":"color-wheel",
          "tags":"hex,color,rgb,convert"

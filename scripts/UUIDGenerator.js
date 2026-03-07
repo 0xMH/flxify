@@ -2,7 +2,7 @@
   {
     "api": 1,
     "name": "UUID Generator",
-    "description": "Generates random v4 UUIDs",
+    "description": "Generates random v4 UUIDs. Select a number to generate multiple (max 1000)",
     "author": "Flxify",
     "icon": "shuffle",
     "tags": "uuid,guid,random,generate,id"
@@ -25,16 +25,19 @@ function main(state) {
            hex[10] + hex[11] + hex[12] + hex[13] + hex[14] + hex[15];
   }
 
-  var count = 1;
-  var trimmed = state.text.trim();
-  if (trimmed.length > 0 && !isNaN(trimmed) && parseInt(trimmed) > 0) {
-    count = parseInt(trimmed);
-    if (count > 1000) count = 1000;
+  if (state.isSelection) {
+    var count = 1;
+    var trimmed = state.text.trim();
+    if (trimmed.length > 0 && !isNaN(trimmed) && parseInt(trimmed) > 0) {
+      count = parseInt(trimmed);
+      if (count > 1000) count = 1000;
+    }
+    var uuids = [];
+    for (var i = 0; i < count; i++) {
+      uuids.push(generateUUID());
+    }
+    state.text = uuids.join('\n');
+  } else {
+    state.insert(generateUUID());
   }
-
-  var uuids = [];
-  for (var i = 0; i < count; i++) {
-    uuids.push(generateUUID());
-  }
-  state.text = uuids.join('\n');
 }

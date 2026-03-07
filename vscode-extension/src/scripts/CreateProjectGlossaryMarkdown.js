@@ -2,7 +2,7 @@
 	{
 		"api":1,
 		"name":"Create Project Glossary Markdown File",
-		"description":"Type 'help' and run this script for instructions.",
+		"description":"Generates a markdown glossary template with A-Z sections for project documentation",
 		"author":"Terry L. Lewis",
 		"icon":"colosseum",
         "tags":"markdown,glossary",

@@ -2,7 +2,7 @@
   {
     "api":1,
     "name":"RGB to Hex",
-    "description":"Convert color in RGB to hexadecimal",
+    "description":"Converts RGB color values to hex format (e.g., 255,87,51 to #FF5733)",
     "author":"luisfontes19",
     "icon":"color-wheel",
     "tags":"rgb,hex,convert,color"

@@ -302,6 +302,26 @@ function filterScripts(query) {
   renderResults();
 }
 
+var animalEmojis = [
+  '🐶','🐱','🐭','🐹','🐰','🦊','🐻','🐼','🐨','🐯',
+  '🦁','🐮','🐷','🐸','🐵','🐔','🐧','🐦','🦆','🦅',
+  '🦉','🐺','🐗','🐴','🦄','🐝','🦋','🐌','🐞','🐢',
+  '🐍','🦎','🐙','🦑','🦐','🦀','🐡','🐠','🐟','🐬',
+  '🐳','🦈','🐊','🐆','🦓','🦍','🐘','🦛','🦏','🐪',
+  '🦒','🦘','🐃','🐄','🐎','🐖','🐏','🐑','🦙','🐐',
+  '🦌','🐕','🐩','🐈','🦃','🦚','🦜','🦢','🦩','🐇',
+  '🦝','🦨','🦦','🦥','🐁','🐿','🦔','🦫','🕊','🐓'
+];
+
+function getScriptEmoji(name) {
+  var hash = 0;
+  for (var i = 0; i < name.length; i++) {
+    hash = ((hash << 5) - hash) + name.charCodeAt(i);
+    hash |= 0;
+  }
+  return animalEmojis[Math.abs(hash) % animalEmojis.length];
+}
+
 function renderResults() {
   resultsList.innerHTML = '';
   filteredScripts.forEach(function(script, index) {
@@ -310,7 +330,7 @@ function renderResults() {
 
     var nameSpan = document.createElement('span');
     nameSpan.className = 'script-name';
-    nameSpan.textContent = script.name;
+    nameSpan.textContent = getScriptEmoji(script.name) + '  ' + script.name;
 
     var descSpan = document.createElement('span');
     descSpan.className = 'script-desc';
@@ -400,6 +420,37 @@ document.querySelectorAll('.faq-question').forEach(function(q) {
   });
 });
 
+// Mobile menu button
+var mobileBtn = document.getElementById('mobile-menu-btn');
+if (mobileBtn) mobileBtn.addEventListener('click', showPalette);
+
+// Theme toggle (CSS class + localStorage + optional CM theme switch)
+var themeBtn = document.getElementById('theme-toggle');
+if (themeBtn) {
+  // Apply saved theme on load
+  try {
+    if (localStorage.getItem('flxify-theme') === 'light') {
+      document.body.classList.add('light-mode');
+    }
+  } catch(e) {}
+
+  themeBtn.addEventListener('click', function() {
+    var goLight = !document.body.classList.contains('light-mode');
+    document.body.classList.toggle('light-mode', goLight);
+    try { localStorage.setItem('flxify-theme', goLight ? 'light' : 'dark'); } catch(e) {}
+    // Switch CodeMirror theme if available
+    var cm = window.cmEditor;
+    var conf = window.flxifyThemeConf;
+    if (cm && conf) {
+      var theme = goLight ? window.flxifyLightTheme : window.flxifyDarkTheme;
+      if (theme) cm.dispatch({ effects: conf.reconfigure([theme]) });
+    }
+    // Update theme-color meta tag
+    var tc = document.querySelector('meta[name="theme-color"]');
+    if (tc) tc.setAttribute('content', goLight ? '#f5f5f5' : '#252526');
+  });
+}
+
 // Directory search filter
 var dirSearch = document.getElementById('directory-search');
 if (dirSearch) {
@@ -415,6 +466,11 @@ if (dirSearch) {
       section.style.display = visible.length > 0 ? '' : 'none';
     });
   });
+}
+
+// Service worker registration
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/service-worker.js').catch(function() {});
 }
 
 })();
@@ -597,6 +653,9 @@ for (const entry of seoEntries) {
   <meta name="keywords" content="${escHtml(entry.keywords.join(', '))}">
   <link rel="canonical" href="${SITE_URL}/tools/${entry.slug}/">
   <link rel="icon" type="image/png" href="../../logo.png">
+  <link rel="manifest" href="../../manifest.json">
+  <meta name="theme-color" content="#252526">
+  <link rel="apple-touch-icon" href="../../icons/icon-192.png">
   <link rel="preconnect" href="https://esm.sh">
 
   <meta property="og:type" content="website">
@@ -623,12 +682,19 @@ for (const entry of seoEntries) {
       <img src="../../logo.png" alt="Flxify" class="app-logo">
       <span class="app-title">Flxify</span>
     </a>
+    <button id="mobile-menu-btn" class="mobile-menu-btn" title="Open command palette">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
     <nav class="top-bar-nav">
       <a href="../" class="nav-link">All Tools</a>
       <a href="https://marketplace.visualstudio.com/items?itemName=flxify.flxify" target="_blank" rel="noopener" class="vscode-ext-link" title="Get the VS Code Extension">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.583.063a1.5 1.5 0 0 1 1.342.825l4.5 9.75a1.5 1.5 0 0 1 0 1.272l-4.5 9.75a1.5 1.5 0 0 1-1.342.84H6.417a1.5 1.5 0 0 1-1.342-.825l-4.5-9.75a1.5 1.5 0 0 1 0-1.272l4.5-9.75A1.5 1.5 0 0 1 6.417.038h11.166zM12 6.75a5.25 5.25 0 1 0 0 10.5 5.25 5.25 0 0 0 0-10.5z"/></svg>
         <span>VS Code</span>
       </a>
+      <button id="theme-toggle" class="theme-toggle" title="Toggle light/dark mode">
+        <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
     </nav>
   </div>
 
@@ -758,6 +824,9 @@ const directoryPage = `<!DOCTYPE html>
   <meta name="description" content="Browse ${seoEntries.length}+ free online developer text utilities: JSON formatters, encoders, hash generators, converters, and more. 100% client-side.">
   <link rel="canonical" href="${SITE_URL}/tools/">
   <link rel="icon" type="image/png" href="../logo.png">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#252526">
+  <link rel="apple-touch-icon" href="../icons/icon-192.png">
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="All Developer Tools - Free Online Utilities | Flxify">
@@ -784,6 +853,10 @@ const directoryPage = `<!DOCTYPE html>
         <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.583.063a1.5 1.5 0 0 1 1.342.825l4.5 9.75a1.5 1.5 0 0 1 0 1.272l-4.5 9.75a1.5 1.5 0 0 1-1.342.84H6.417a1.5 1.5 0 0 1-1.342-.825l-4.5-9.75a1.5 1.5 0 0 1 0-1.272l4.5-9.75A1.5 1.5 0 0 1 6.417.038h11.166zM12 6.75a5.25 5.25 0 1 0 0 10.5 5.25 5.25 0 0 0 0-10.5z"/></svg>
         <span>VS Code Extension</span>
       </a>
+      <button id="theme-toggle" class="theme-toggle" title="Toggle light/dark mode">
+        <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
     </nav>
   </div>
 

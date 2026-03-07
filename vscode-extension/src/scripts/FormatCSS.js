@@ -2,7 +2,7 @@
 	{
 		"api":1,
 		"name":"Format CSS",
-		"description":"Cleans and format CSS stylesheets.",
+		"description":"Formats CSS with proper indentation and line breaks",
 		"author":"Ivan",
 		"icon":"broom",
 		"tags":"css,prettify,clean,indent",

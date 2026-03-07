@@ -7,6 +7,9 @@
   <meta name="description" content="Browse 107+ free online developer text utilities: JSON formatters, encoders, hash generators, converters, and more. 100% client-side.">
   <link rel="canonical" href="https://flxify.dev/tools/">
   <link rel="icon" type="image/png" href="../logo.png">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#252526">
+  <link rel="apple-touch-icon" href="../icons/icon-192.png">
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="All Developer Tools - Free Online Utilities | Flxify">
@@ -33,6 +36,10 @@
         <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.583.063a1.5 1.5 0 0 1 1.342.825l4.5 9.75a1.5 1.5 0 0 1 0 1.272l-4.5 9.75a1.5 1.5 0 0 1-1.342.84H6.417a1.5 1.5 0 0 1-1.342-.825l-4.5-9.75a1.5 1.5 0 0 1 0-1.272l4.5-9.75A1.5 1.5 0 0 1 6.417.038h11.166zM12 6.75a5.25 5.25 0 1 0 0 10.5 5.25 5.25 0 0 0 0-10.5z"/></svg>
         <span>VS Code Extension</span>
       </a>
+      <button id="theme-toggle" class="theme-toggle" title="Toggle light/dark mode">
+        <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
     </nav>
   </div>
 
@@ -46,19 +53,19 @@
       <div class="tool-grid">
         <a href="format-css/" class="tool-card">
           <div class="tool-card-name">Format CSS</div>
-          <div class="tool-card-desc">Cleans and format CSS stylesheets.</div>
+          <div class="tool-card-desc">Formats CSS with proper indentation and line breaks</div>
         </a>
         <a href="format-json/" class="tool-card">
           <div class="tool-card-name">Format JSON</div>
-          <div class="tool-card-desc">Cleans and format JSON documents.</div>
+          <div class="tool-card-desc">Formats JSON with proper indentation and validates syntax</div>
         </a>
         <a href="format-sql/" class="tool-card">
           <div class="tool-card-name">Format SQL</div>
-          <div class="tool-card-desc">Cleans and format SQL queries.</div>
+          <div class="tool-card-desc">Formats SQL queries with proper indentation and line breaks</div>
         </a>
         <a href="format-xml/" class="tool-card">
           <div class="tool-card-name">Format XML</div>
-          <div class="tool-card-desc">Cleans and format XML/HTML documents.</div>
+          <div class="tool-card-desc">Formats XML and HTML with proper indentation and line breaks</div>
         </a>
       </div>
     </section>
@@ -67,19 +74,19 @@
       <div class="tool-grid">
         <a href="minify-css/" class="tool-card">
           <div class="tool-card-name">Minify CSS</div>
-          <div class="tool-card-desc">Cleans and minifies CSS stylesheets.</div>
+          <div class="tool-card-desc">Removes whitespace and comments to compress CSS</div>
         </a>
         <a href="minify-json/" class="tool-card">
           <div class="tool-card-name">Minify JSON</div>
-          <div class="tool-card-desc">Cleans and minifies JSON documents.</div>
+          <div class="tool-card-desc">Removes whitespace to compress JSON into a single line</div>
         </a>
         <a href="minify-sql/" class="tool-card">
           <div class="tool-card-name">Minify SQL</div>
-          <div class="tool-card-desc">Cleans and minifies SQL queries.</div>
+          <div class="tool-card-desc">Removes whitespace and comments to compress SQL queries</div>
         </a>
         <a href="minify-xml/" class="tool-card">
           <div class="tool-card-name">Minify XML</div>
-          <div class="tool-card-desc">Cleans and minifies XML/HTML documents.</div>
+          <div class="tool-card-desc">Removes whitespace and comments to compress XML and HTML</div>
         </a>
       </div>
     </section>
@@ -88,47 +95,47 @@
       <div class="tool-grid">
         <a href="base64-decode/" class="tool-card">
           <div class="tool-card-name">Base64 Decode</div>
-          <div class="tool-card-desc">Decodes your text from Base64</div>
+          <div class="tool-card-desc">Decodes Base64-encoded text back to plain text</div>
         </a>
         <a href="base64-encode/" class="tool-card">
           <div class="tool-card-name">Base64 Encode</div>
-          <div class="tool-card-desc">Encodes your text to Base64</div>
+          <div class="tool-card-desc">Encodes text to Base64 format for safe data transfer</div>
         </a>
         <a href="from-string-from-unicode-scaped/" class="tool-card">
           <div class="tool-card-name">From string from unicode scaped</div>
-          <div class="tool-card-desc">Returns a readable string from the unicode scaped string (js format)</div>
+          <div class="tool-card-desc">Decodes Unicode escape sequences (\uXXXX) to readable text</div>
         </a>
         <a href="html-decode/" class="tool-card">
           <div class="tool-card-name">HTML Decode</div>
-          <div class="tool-card-desc">Decodes HTML entities in your text</div>
+          <div class="tool-card-desc">Decodes HTML entities to readable characters (e.g., &amp;amp; to &amp;)</div>
         </a>
         <a href="html-encode/" class="tool-card">
           <div class="tool-card-name">HTML Encode</div>
-          <div class="tool-card-desc">Encodes HTML entities in your text</div>
+          <div class="tool-card-desc">Encodes special characters to HTML entities (e.g., &amp; to &amp;amp;)</div>
         </a>
         <a href="html-encode-all-characters/" class="tool-card">
           <div class="tool-card-name">HTML Encode all characters</div>
-          <div class="tool-card-desc">HTML Encodes every character in your text</div>
+          <div class="tool-card-desc">Encodes every character to HTML numeric entities for obfuscation</div>
         </a>
         <a href="to-unicode-escaped-string/" class="tool-card">
           <div class="tool-card-name">To Unicode Escaped String</div>
-          <div class="tool-card-desc">Converts a UTF8 string to unicode escape chars(js format)</div>
+          <div class="tool-card-desc">Converts text to Unicode escape sequences (\uXXXX format)</div>
         </a>
         <a href="url-decode/" class="tool-card">
           <div class="tool-card-name">URL Decode</div>
-          <div class="tool-card-desc">Decodes URL entities in your text.</div>
+          <div class="tool-card-desc">Decodes URL-encoded characters (e.g., %20 to space)</div>
         </a>
         <a href="url-encode/" class="tool-card">
           <div class="tool-card-name">URL Encode</div>
-          <div class="tool-card-desc">Encodes URL entities in your text.</div>
+          <div class="tool-card-desc">Encodes special characters for safe use in URLs</div>
         </a>
         <a href="url-entities-decode/" class="tool-card">
           <div class="tool-card-name">URL Entities Decode</div>
-          <div class="tool-card-desc">URL Decodes all characters in your text.</div>
+          <div class="tool-card-desc">Decodes percent-encoded characters (e.g., %48%65%6C%6C%6F to Hello)</div>
         </a>
         <a href="url-entity-encode/" class="tool-card">
           <div class="tool-card-name">URL Entity Encode</div>
-          <div class="tool-card-desc">URL Encodes all characters in your text.</div>
+          <div class="tool-card-desc">Encodes every character to percent-encoded format</div>
         </a>
       </div>
     </section>
@@ -137,19 +144,19 @@
       <div class="tool-grid">
         <a href="md5-checksum/" class="tool-card">
           <div class="tool-card-name">MD5 Checksum</div>
-          <div class="tool-card-desc">Computes the checksum of your text (Hex encoded).</div>
+          <div class="tool-card-desc">Generates MD5 hash of text in hexadecimal format</div>
         </a>
         <a href="sha1-hash/" class="tool-card">
           <div class="tool-card-name">SHA1 Hash</div>
-          <div class="tool-card-desc">Computes the SHA1 hash of your text (Hex encoded)</div>
+          <div class="tool-card-desc">Generates SHA1 hash of text in hexadecimal format</div>
         </a>
         <a href="sha256-hash/" class="tool-card">
           <div class="tool-card-name">SHA256 Hash</div>
-          <div class="tool-card-desc">Computes the SHA256 hash of your text (Hex encoded)</div>
+          <div class="tool-card-desc">Generates SHA256 hash of text in hexadecimal format</div>
         </a>
         <a href="sha512-hash/" class="tool-card">
           <div class="tool-card-name">SHA512 Hash</div>
-          <div class="tool-card-desc">Computes the SHA512 hash of your text (Hex encoded)</div>
+          <div class="tool-card-desc">Generates SHA512 hash of text in hexadecimal format</div>
         </a>
       </div>
     </section>
@@ -158,103 +165,103 @@
       <div class="tool-grid">
         <a href="android-strings-to-ios-localizables/" class="tool-card">
           <div class="tool-card-name">Android Strings to iOS Localizables</div>
-          <div class="tool-card-desc">Converts Android Strings to iOS localizables.</div>
+          <div class="tool-card-desc">Converts Android strings.xml format to iOS Localizable.strings format</div>
         </a>
         <a href="ascii-to-hex/" class="tool-card">
           <div class="tool-card-name">ASCII To Hex</div>
-          <div class="tool-card-desc">Converts ASCII characters to hexadecimal codes.</div>
+          <div class="tool-card-desc">Converts ASCII text to hexadecimal representation</div>
         </a>
         <a href="binary-to-decimal/" class="tool-card">
           <div class="tool-card-name">Binary to Decimal</div>
-          <div class="tool-card-desc">Converts binary values to decimal.</div>
+          <div class="tool-card-desc">Converts binary numbers to decimal, processing each line separately</div>
         </a>
         <a href="convert-to-pretty-markdown-table/" class="tool-card">
           <div class="tool-card-name">Convert to pretty markdown table</div>
-          <div class="tool-card-desc">Converts csv, tsv or markdown table into pretty markdown table format.</div>
+          <div class="tool-card-desc">Converts CSV, TSV, or markdown tables to formatted markdown table with aligned columns</div>
         </a>
         <a href="csv-to-json/" class="tool-card">
           <div class="tool-card-name">CSV to JSON</div>
-          <div class="tool-card-desc">Converts comma-separated tables to JSON.</div>
+          <div class="tool-card-desc">Converts CSV to JSON array of objects using first row as headers</div>
         </a>
         <a href="csv-to-json-headerless/" class="tool-card">
           <div class="tool-card-name">CSV to JSON (headerless)</div>
-          <div class="tool-card-desc">Converts comma-separated, headerless tables to JSON.</div>
+          <div class="tool-card-desc">Converts CSV to JSON array of arrays without using headers</div>
         </a>
         <a href="decimal-to-binary/" class="tool-card">
           <div class="tool-card-name">Decimal to Binary</div>
-          <div class="tool-card-desc">Converts decimal values to binary.</div>
+          <div class="tool-card-desc">Converts decimal numbers to binary, processing each line separately</div>
         </a>
         <a href="decimal-to-hex/" class="tool-card">
           <div class="tool-card-name">Decimal to Hex</div>
-          <div class="tool-card-desc">Converts decimal values to hexadecimal.</div>
+          <div class="tool-card-desc">Converts decimal numbers to hexadecimal, processing each line separately</div>
         </a>
         <a href="digi-to-ascii/" class="tool-card">
           <div class="tool-card-name">Digi to ASCII</div>
-          <div class="tool-card-desc">Digi to ASCII</div>
+          <div class="tool-card-desc">Converts space or comma-separated ASCII codes to text characters</div>
         </a>
         <a href="fish-path-hex-converter/" class="tool-card">
           <div class="tool-card-name">Fish PATH Hex Converter</div>
-          <div class="tool-card-desc">Escapes terminal characters.</div>
+          <div class="tool-card-desc">Escapes special characters to hex for Fish shell PATH variables</div>
         </a>
         <a href="hex-to-ascii/" class="tool-card">
           <div class="tool-card-name">Hex To ASCII</div>
-          <div class="tool-card-desc">Converts hexadecimal values into ASCII characters</div>
+          <div class="tool-card-desc">Converts hexadecimal representation to ASCII text</div>
         </a>
         <a href="hex-to-dec/" class="tool-card">
           <div class="tool-card-name">Hex to Dec</div>
-          <div class="tool-card-desc">Converts hexadecimal to decimal.</div>
+          <div class="tool-card-desc">Converts hexadecimal numbers to decimal, processing each line separately</div>
         </a>
         <a href="hex-to-rgb/" class="tool-card">
           <div class="tool-card-name">Hex to RGB</div>
-          <div class="tool-card-desc">Convert color in hexadecimal to RGB.</div>
+          <div class="tool-card-desc">Converts hex color codes to RGB format (e.g., #FF5733 to 255,87,51)</div>
         </a>
         <a href="ios-localizables-to-android-strings/" class="tool-card">
           <div class="tool-card-name">iOS Localizables to Android Strings</div>
-          <div class="tool-card-desc">Converts iOS Localizables to Android Strings</div>
+          <div class="tool-card-desc">Converts iOS Localizable.strings format to Android strings.xml format</div>
         </a>
         <a href="js-object-to-json/" class="tool-card">
           <div class="tool-card-name">JS Object to JSON</div>
-          <div class="tool-card-desc">Converts a javascript object to JSON format</div>
+          <div class="tool-card-desc">Converts JavaScript object literals to valid JSON format</div>
         </a>
         <a href="js-to-php/" class="tool-card">
           <div class="tool-card-name">JS To PHP</div>
-          <div class="tool-card-desc">Convert JS Object or Array to PHP.</div>
+          <div class="tool-card-desc">Converts JavaScript objects or arrays to PHP array syntax</div>
         </a>
         <a href="json-to-csv/" class="tool-card">
           <div class="tool-card-name">JSON to CSV</div>
-          <div class="tool-card-desc">Converts JSON to comma-separated tables.</div>
+          <div class="tool-card-desc">Converts JSON array of objects to CSV format with headers</div>
         </a>
         <a href="json-to-query-string/" class="tool-card">
           <div class="tool-card-name">JSON to Query String</div>
-          <div class="tool-card-desc">Converts JSON to URL query string.</div>
+          <div class="tool-card-desc">Converts JSON object to URL query string parameters</div>
         </a>
         <a href="json-to-yaml/" class="tool-card">
           <div class="tool-card-name">JSON to YAML</div>
-          <div class="tool-card-desc">Converts JSON to YAML.</div>
+          <div class="tool-card-desc">Converts JSON to YAML format</div>
         </a>
         <a href="query-string-to-json/" class="tool-card">
           <div class="tool-card-name">Query String to JSON</div>
-          <div class="tool-card-desc">Converts URL query string to JSON.</div>
+          <div class="tool-card-desc">Converts URL query string parameters to JSON object</div>
         </a>
         <a href="rgb-to-hex/" class="tool-card">
           <div class="tool-card-name">RGB to Hex</div>
-          <div class="tool-card-desc">Convert color in RGB to hexadecimal</div>
+          <div class="tool-card-desc">Converts RGB color values to hex format (e.g., 255,87,51 to #FF5733)</div>
         </a>
         <a href="tsv-to-json/" class="tool-card">
           <div class="tool-card-name">TSV to JSON</div>
-          <div class="tool-card-desc">Converts TSV to JSON</div>
+          <div class="tool-card-desc">Converts tab-separated values to JSON array of objects</div>
         </a>
         <a href="well-known-binary-to-text/" class="tool-card">
           <div class="tool-card-name">Well-Known Binary to Text</div>
-          <div class="tool-card-desc">Converts your hex encoded WKB (any endian) to WKB, wkb2wkt</div>
+          <div class="tool-card-desc">Converts hex-encoded Well-Known Binary (WKB) to Well-Known Text (WKT) format</div>
         </a>
         <a href="well-known-text-to-binary/" class="tool-card">
           <div class="tool-card-name">Well-Known Text to Binary</div>
-          <div class="tool-card-desc">Converts your WKT to little endian WKB (hex encoded), wkt2wkb</div>
+          <div class="tool-card-desc">Converts Well-Known Text (WKT) to hex-encoded Well-Known Binary (WKB) format</div>
         </a>
         <a href="yaml-to-json/" class="tool-card">
           <div class="tool-card-name">YAML to JSON</div>
-          <div class="tool-card-desc">Converts YAML to JSON.</div>
+          <div class="tool-card-desc">Converts YAML format to JSON</div>
         </a>
       </div>
     </section>
@@ -263,39 +270,39 @@
       <div class="tool-grid">
         <a href="camel-case/" class="tool-card">
           <div class="tool-card-name">Camel Case</div>
-          <div class="tool-card-desc">convertsYourTextToCamelCase</div>
+          <div class="tool-card-desc">Converts text to camelCase format, removing spaces and capitalizing words</div>
         </a>
         <a href="deburr/" class="tool-card">
           <div class="tool-card-name">Deburr</div>
-          <div class="tool-card-desc">Converts your text to basic latin characters.</div>
+          <div class="tool-card-desc">Removes accents and diacritics, converting to basic Latin characters</div>
         </a>
         <a href="downcase/" class="tool-card">
           <div class="tool-card-name">Downcase</div>
-          <div class="tool-card-desc">Converts your text to lowercase.</div>
+          <div class="tool-card-desc">Converts all text to lowercase</div>
         </a>
         <a href="kebab-case/" class="tool-card">
           <div class="tool-card-name">Kebab Case</div>
-          <div class="tool-card-desc">converts-your-text-to-kebab-case.</div>
+          <div class="tool-card-desc">Converts text to kebab-case format, separating words with hyphens</div>
         </a>
         <a href="snake-case/" class="tool-card">
           <div class="tool-card-name">Snake Case</div>
-          <div class="tool-card-desc">converts_your_text_to_snake_case.</div>
+          <div class="tool-card-desc">Converts text to snake_case format, separating words with underscores</div>
         </a>
         <a href="sponge-case/" class="tool-card">
           <div class="tool-card-name">Sponge Case</div>
-          <div class="tool-card-desc">CoNvERtS yoUR Text To A HIghER fOrM Of CoMMUnICAtIOn</div>
+          <div class="tool-card-desc">Randomly alternates uppercase and lowercase letters for sarcastic mocking</div>
         </a>
         <a href="start-case/" class="tool-card">
           <div class="tool-card-name">Start Case</div>
-          <div class="tool-card-desc">Converts Your Text To Start Case.</div>
+          <div class="tool-card-desc">Converts text to Start Case, capitalizing the first letter of each word</div>
         </a>
         <a href="toggle-camel-and-hyphen/" class="tool-card">
           <div class="tool-card-name">Toggle Camel and Hyphen</div>
-          <div class="tool-card-desc">Turns camelCase to camel-case and vice versa</div>
+          <div class="tool-card-desc">Toggles between camelCase and hyphen-case (kebab-case)</div>
         </a>
         <a href="upcase/" class="tool-card">
           <div class="tool-card-name">Upcase</div>
-          <div class="tool-card-desc">Converts your text to uppercase.</div>
+          <div class="tool-card-desc">Converts all text to uppercase</div>
         </a>
       </div>
     </section>
@@ -304,123 +311,123 @@
       <div class="tool-grid">
         <a href="add-line-numbers/" class="tool-card">
           <div class="tool-card-name">Add Line Numbers</div>
-          <div class="tool-card-desc">Adds line numbers to each line of your text</div>
+          <div class="tool-card-desc">Prepends line numbers to each line with aligned spacing</div>
         </a>
         <a href="add-slashes/" class="tool-card">
           <div class="tool-card-name">Add Slashes</div>
-          <div class="tool-card-desc">Escapes your text.</div>
+          <div class="tool-card-desc">Escapes quotes, backslashes, and null characters with backslashes</div>
         </a>
         <a href="collapse-lines/" class="tool-card">
           <div class="tool-card-name">Collapse lines</div>
-          <div class="tool-card-desc">Removes all linebreaks from your text</div>
+          <div class="tool-card-desc">Removes all line breaks, joining text into a single line</div>
         </a>
         <a href="defang/" class="tool-card">
           <div class="tool-card-name">Defang</div>
-          <div class="tool-card-desc">Defangs dangerous URLs and other IOCs</div>
+          <div class="tool-card-desc">Makes URLs non-clickable by replacing dots and protocols for safe sharing</div>
         </a>
         <a href="join-lines/" class="tool-card">
           <div class="tool-card-name">Join Lines</div>
-          <div class="tool-card-desc">Joins all lines without any delimiter.</div>
+          <div class="tool-card-desc">Joins all lines together with no separator or delimiter</div>
         </a>
         <a href="join-lines-with-comma/" class="tool-card">
           <div class="tool-card-name">Join Lines With Comma</div>
-          <div class="tool-card-desc">Joins all lines with a comma.</div>
+          <div class="tool-card-desc">Joins all lines together separated by commas</div>
         </a>
         <a href="join-lines-with-space/" class="tool-card">
           <div class="tool-card-name">Join Lines With Space</div>
-          <div class="tool-card-desc">Joins all lines with a space</div>
+          <div class="tool-card-desc">Joins all lines together separated by spaces</div>
         </a>
         <a href="line-compare/" class="tool-card">
           <div class="tool-card-name">Line compare</div>
-          <div class="tool-card-desc">Check if existing lines have all the same content</div>
+          <div class="tool-card-desc">Checks if all lines match the first line and reports differences</div>
         </a>
         <a href="list-to-html-list/" class="tool-card">
           <div class="tool-card-name">List to HTML list</div>
-          <div class="tool-card-desc">Turns comma separated list to HTML Lists</div>
+          <div class="tool-card-desc">Converts comma-separated list to HTML unordered list and vice versa</div>
         </a>
         <a href="markdown-quote/" class="tool-card">
           <div class="tool-card-name">Markdown Quote</div>
-          <div class="tool-card-desc">Adds &gt; to the start of every line of your text.</div>
+          <div class="tool-card-desc">Prefixes each line with &gt; to create markdown blockquotes</div>
         </a>
         <a href="natural-sort-lines/" class="tool-card">
           <div class="tool-card-name">Natural Sort Lines</div>
-          <div class="tool-card-desc">Sort lines with smart handling of numbers.</div>
+          <div class="tool-card-desc">Sorts lines alphabetically with natural number ordering (1, 2, 10 not 1, 10, 2)</div>
         </a>
         <a href="php-unserialize/" class="tool-card">
           <div class="tool-card-name">PHP Unserialize</div>
-          <div class="tool-card-desc">Convert PHP serialized data to JSON</div>
+          <div class="tool-card-desc">Converts PHP serialized data to JSON format</div>
         </a>
         <a href="refang/" class="tool-card">
           <div class="tool-card-name">Refang</div>
-          <div class="tool-card-desc">Removes defanging from dangerous URLs and other IOCs</div>
+          <div class="tool-card-desc">Restores defanged URLs to clickable format (reverses defang operation)</div>
         </a>
         <a href="remove-duplicate-lines/" class="tool-card">
           <div class="tool-card-name">Remove Duplicate Lines</div>
-          <div class="tool-card-desc">Ensures each line of your text is unique.</div>
+          <div class="tool-card-desc">Removes duplicate lines, keeping only the first occurrence of each</div>
         </a>
         <a href="remove-line-numbers/" class="tool-card">
           <div class="tool-card-name">Remove Line Numbers</div>
-          <div class="tool-card-desc">Strips line number prefixes from your text</div>
+          <div class="tool-card-desc">Removes line number prefixes from each line</div>
         </a>
         <a href="remove-slashes/" class="tool-card">
           <div class="tool-card-name">Remove Slashes</div>
-          <div class="tool-card-desc">Unescapes your text.</div>
+          <div class="tool-card-desc">Removes backslash escapes from quotes and special characters</div>
         </a>
         <a href="replace-smart-quotes/" class="tool-card">
           <div class="tool-card-name">Replace Smart Quotes</div>
-          <div class="tool-card-desc">Replace Smart Quotes with their simpler values.</div>
+          <div class="tool-card-desc">Replaces curly/smart quotes with straight quotes</div>
         </a>
         <a href="reverse-lines/" class="tool-card">
           <div class="tool-card-name">Reverse Lines</div>
-          <div class="tool-card-desc">Flips every line of your text.</div>
+          <div class="tool-card-desc">Reverses the order of lines (last line becomes first)</div>
         </a>
         <a href="reverse-string/" class="tool-card">
           <div class="tool-card-name">Reverse String</div>
-          <div class="tool-card-desc">!seod ti tahw sseuG</div>
+          <div class="tool-card-desc">Reverses character order in text (supports Unicode and emoji)</div>
         </a>
         <a href="rot13/" class="tool-card">
           <div class="tool-card-name">Rot13</div>
-          <div class="tool-card-desc">Applies the Rot13 cypher to your text.</div>
+          <div class="tool-card-desc">Applies ROT13 cipher, shifting letters by 13 positions (reversible)</div>
         </a>
         <a href="shuffle-characters/" class="tool-card">
           <div class="tool-card-name">Shuffle characters</div>
-          <div class="tool-card-desc">Shuffles characters randomly</div>
+          <div class="tool-card-desc">Randomly shuffles all characters in text</div>
         </a>
         <a href="shuffle-lines/" class="tool-card">
           <div class="tool-card-name">Shuffle Lines</div>
-          <div class="tool-card-desc">Randomize each line of your text.</div>
+          <div class="tool-card-desc">Randomly shuffles the order of lines</div>
         </a>
         <a href="sort-json/" class="tool-card">
           <div class="tool-card-name">Sort JSON</div>
-          <div class="tool-card-desc">Sort JSON</div>
+          <div class="tool-card-desc">Sorts JSON object keys alphabetically and array elements</div>
         </a>
         <a href="sort-lines/" class="tool-card">
           <div class="tool-card-name">Sort lines</div>
-          <div class="tool-card-desc">Sort lines alphabetically.</div>
+          <div class="tool-card-desc">Sorts lines alphabetically (toggles reverse if already sorted)</div>
         </a>
         <a href="spaces-to-tabs/" class="tool-card">
           <div class="tool-card-name">Spaces to Tabs</div>
-          <div class="tool-card-desc">Converts leading spaces to tabs (2 or 4 spaces)</div>
+          <div class="tool-card-desc">Converts leading spaces to tabs, auto-detecting 2 or 4-space indentation</div>
         </a>
         <a href="tabs-to-spaces/" class="tool-card">
           <div class="tool-card-name">Tabs to Spaces</div>
-          <div class="tool-card-desc">Converts leading tabs to spaces (2 spaces per tab)</div>
+          <div class="tool-card-desc">Converts leading tabs to 2-space indentation</div>
         </a>
         <a href="trim/" class="tool-card">
           <div class="tool-card-name">Trim</div>
-          <div class="tool-card-desc">Trims leading and trailing whitespace.</div>
+          <div class="tool-card-desc">Removes whitespace from the beginning and end of text</div>
         </a>
         <a href="trim-end/" class="tool-card">
           <div class="tool-card-name">Trim End</div>
-          <div class="tool-card-desc">Trims trailing whitespace.</div>
+          <div class="tool-card-desc">Removes whitespace from the end of text</div>
         </a>
         <a href="trim-start/" class="tool-card">
           <div class="tool-card-name">Trim Start</div>
-          <div class="tool-card-desc">Trims leading whitespace.</div>
+          <div class="tool-card-desc">Removes whitespace from the beginning of text</div>
         </a>
         <a href="wadsworth-constant/" class="tool-card">
           <div class="tool-card-name">Wadsworth Constant</div>
-          <div class="tool-card-desc">first 30% of your text.</div>
+          <div class="tool-card-desc">Removes first 30% of text (Wadsworth Constant: skip boring intro)</div>
         </a>
       </div>
     </section>
@@ -429,27 +436,27 @@
       <div class="tool-grid">
         <a href="contrasting-color/" class="tool-card">
           <div class="tool-card-name">Contrasting Color</div>
-          <div class="tool-card-desc">Determine whether black or white contrasts better with the given color(s) (one per line).</div>
+          <div class="tool-card-desc">Determines best contrasting text color (black/white) for hex colors with WCAG ratios</div>
         </a>
         <a href="create-project-glossary-markdown-file/" class="tool-card">
           <div class="tool-card-name">Create Project Glossary Markdown File</div>
-          <div class="tool-card-desc">Type 'help' and run this script for instructions.</div>
+          <div class="tool-card-desc">Generates a markdown glossary template with A-Z sections for project documentation</div>
         </a>
         <a href="generate-hashtag/" class="tool-card">
           <div class="tool-card-name">Generate hashtag</div>
-          <div class="tool-card-desc">Generate hashtag from a word or sentence</div>
+          <div class="tool-card-desc">Converts text to camelCase hashtag format by removing special characters</div>
         </a>
         <a href="lorem-ipsum/" class="tool-card">
           <div class="tool-card-name">Lorem Ipsum</div>
-          <div class="tool-card-desc">Generates Lorem Ipsum placeholder text.</div>
+          <div class="tool-card-desc">Generates random Lorem Ipsum placeholder text (100 words)</div>
         </a>
         <a href="new-boop-script/" class="tool-card">
           <div class="tool-card-name">New Boop Script</div>
-          <div class="tool-card-desc">Returns a basic Boop script.</div>
+          <div class="tool-card-desc">Inserts a template for creating new Flxify scripts</div>
         </a>
         <a href="uuid-generator/" class="tool-card">
           <div class="tool-card-name">UUID Generator</div>
-          <div class="tool-card-desc">Generates random v4 UUIDs</div>
+          <div class="tool-card-desc">Generates random v4 UUIDs. Select a number to generate multiple (max 1000)</div>
         </a>
       </div>
     </section>
@@ -458,31 +465,31 @@
       <div class="tool-grid">
         <a href="calculate-size-bytes/" class="tool-card">
           <div class="tool-card-name">Calculate Size (Bytes)</div>
-          <div class="tool-card-desc">Calculates size of text in Bytes</div>
+          <div class="tool-card-desc">Calculates UTF-8 byte size of text and displays in bytes, KB, or MB</div>
         </a>
         <a href="count-characters/" class="tool-card">
           <div class="tool-card-name">Count Characters</div>
-          <div class="tool-card-desc">Get the length of your text</div>
+          <div class="tool-card-desc">Counts the total number of characters in text</div>
         </a>
         <a href="count-lines/" class="tool-card">
           <div class="tool-card-name">Count Lines</div>
-          <div class="tool-card-desc">Get the line count of your text</div>
+          <div class="tool-card-desc">Counts the total number of lines in text</div>
         </a>
         <a href="count-words/" class="tool-card">
           <div class="tool-card-name">Count Words</div>
-          <div class="tool-card-desc">Get the word count of your text</div>
+          <div class="tool-card-desc">Counts the total number of words in text</div>
         </a>
         <a href="extract-emails/" class="tool-card">
           <div class="tool-card-name">Extract Emails</div>
-          <div class="tool-card-desc">Extracts all email addresses from your text</div>
+          <div class="tool-card-desc">Extracts all unique email addresses from text, one per line</div>
         </a>
         <a href="extract-urls/" class="tool-card">
           <div class="tool-card-name">Extract URLs</div>
-          <div class="tool-card-desc">Extracts all URLs from your text</div>
+          <div class="tool-card-desc">Extracts all unique HTTP/HTTPS URLs from text, one per line</div>
         </a>
         <a href="sum-all/" class="tool-card">
           <div class="tool-card-name">Sum All</div>
-          <div class="tool-card-desc">Sums up a list of numbers.</div>
+          <div class="tool-card-desc">Sums all numbers in text and displays calculation with total</div>
         </a>
       </div>
     </section>
@@ -491,31 +498,31 @@
       <div class="tool-grid">
         <a href="date-to-timestamp/" class="tool-card">
           <div class="tool-card-name">Date to Timestamp</div>
-          <div class="tool-card-desc">Converts dates to Unix timestamp.</div>
+          <div class="tool-card-desc">Converts readable date strings to Unix timestamp (seconds since epoch)</div>
         </a>
         <a href="date-to-utc/" class="tool-card">
           <div class="tool-card-name">Date to UTC</div>
-          <div class="tool-card-desc">Converts dates and timestamps to UTC dates</div>
+          <div class="tool-card-desc">Converts date strings or Unix timestamps to UTC format</div>
         </a>
         <a href="eval-javascript/" class="tool-card">
           <div class="tool-card-name">Eval Javascript</div>
-          <div class="tool-card-desc">Runs your text as Javascript Code.</div>
+          <div class="tool-card-desc">Executes JavaScript code and appends the output as a comment</div>
         </a>
         <a href="jwt-decode/" class="tool-card">
           <div class="tool-card-name">JWT Decode</div>
-          <div class="tool-card-desc">Converts JWTs to JSON</div>
+          <div class="tool-card-desc">Decodes JWT tokens and displays header, payload, and signature as JSON</div>
         </a>
         <a href="regex-escape/" class="tool-card">
           <div class="tool-card-name">Regex Escape</div>
-          <div class="tool-card-desc">Escapes special regex characters in your text</div>
+          <div class="tool-card-desc">Escapes special regex characters for use in regular expressions</div>
         </a>
         <a href="test-script/" class="tool-card">
           <div class="tool-card-name">Test Script</div>
-          <div class="tool-card-desc">Testing script</div>
+          <div class="tool-card-desc">Developer test script demonstrating syntax highlighting and features</div>
         </a>
         <a href="time-to-seconds/" class="tool-card">
           <div class="tool-card-name">Time to seconds</div>
-          <div class="tool-card-desc">Convert hh:mm:ss to seconds</div>
+          <div class="tool-card-desc">Converts time duration (hh:mm:ss) to total seconds</div>
         </a>
       </div>
     </section>

@@ -2,7 +2,7 @@
 {
   "api": 1,
   "name": "List to HTML list",
-  "description": "Turns comma separated list to HTML Lists",
+  "description": "Converts comma-separated list to HTML unordered list and vice versa",
   "author": "Christian Heilmann",
   "icon": "table",
   "tags": "HTML,Lists"

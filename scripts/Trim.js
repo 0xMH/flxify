@@ -2,7 +2,7 @@
 	{
 		"api":1,
 		"name":"Trim",
-		"description":"Trims leading and trailing whitespace.",
+		"description":"Removes whitespace from the beginning and end of text",
 		"author":"Joshua Nozzi",
 		"icon":"scissors",
 		"tags":"trim,whitespace,empty,space",

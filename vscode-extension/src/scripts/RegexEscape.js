@@ -2,7 +2,7 @@
   {
     "api": 1,
     "name": "Regex Escape",
-    "description": "Escapes special regex characters in your text",
+    "description": "Escapes special regex characters for use in regular expressions",
     "author": "Flxify",
     "icon": "shield",
     "tags": "regex,escape,regexp,regular,expression,special,characters"

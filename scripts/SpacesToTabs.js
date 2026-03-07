@@ -2,7 +2,7 @@
   {
     "api": 1,
     "name": "Spaces to Tabs",
-    "description": "Converts leading spaces to tabs (2 or 4 spaces)",
+    "description": "Converts leading spaces to tabs, auto-detecting 2 or 4-space indentation",
     "author": "Flxify",
     "icon": "indent",
     "tags": "spaces,tabs,indent,convert,whitespace"

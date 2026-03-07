@@ -101,6 +101,18 @@ function main(state) {
 }
 ```
 
+### Script that generates new content (generator)
+```javascript
+function main(state) {
+  var result = generateSomething();
+  if (state.isSelection) {
+    state.text = result;
+  } else {
+    state.insert(result);
+  }
+}
+```
+
 ## Gotchas and Lessons Learned
 
 1. **NEVER use `fetch()` for loading scripts/modules at runtime.** Browsers block `fetch()` on `file://` URLs due to CORS policy. The app was originally designed to fetch web-scripts and lib modules at runtime, but this completely broke when opening `index.html` directly from the filesystem. The fix was to inline everything into `app.js` at build time via `build_app.js`. Always bundle — never rely on runtime `fetch()` for core functionality.
@@ -142,6 +154,8 @@ function main(state) {
 19. **Git case-sensitivity matters for deployment.** macOS is case-insensitive but Linux (most PaaS) is case-sensitive. The `scripts/` directory MUST be lowercase in git. If git tracks it as `Scripts/`, Linux deploys will fail. Use `git mv` via a temp directory to fix case: `git mv Scripts scripts_tmp && git mv scripts_tmp scripts`.
 
 20. **Browser caching can hide deploys.** After pushing fixes, users may still see old errors due to cached JS files. A hard refresh (Cmd+Shift+R) clears the cache. Consider adding cache-busting query strings to asset URLs for production if this becomes a recurring issue.
+
+21. **Generator scripts must use `state.insert()`, not `state.text =`.** Scripts that generate new content (UUID Generator, Lorem Ipsum, New Boop Script) must check `state.isSelection` before writing. If text is selected, use `state.text = result` to replace the selection. If no text is selected, use `state.insert(result)` to insert at the cursor position. Using `state.text = result` with no selection replaces the entire document, which destroys existing editor content. Transform scripts (Upper Case, Sort Lines, Format JSON, etc.) should continue using `state.text = result` because they read and transform the full text.
 
 ## Development Workflow
 

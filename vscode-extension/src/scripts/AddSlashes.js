@@ -2,7 +2,7 @@
 	{
 		"api":1,
 		"name":"Add Slashes",
-		"description":"Escapes your text.",
+		"description":"Escapes quotes, backslashes, and null characters with backslashes",
 		"author":"Ivan",
 		"icon":"quote",
 		"tags":"add,slashes,escape"

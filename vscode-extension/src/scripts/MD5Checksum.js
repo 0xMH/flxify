@@ -2,7 +2,7 @@
 	{
 		"api":1,
 		"name":"MD5 Checksum",
-		"description":"Computes the checksum of your text (Hex encoded).",
+		"description":"Generates MD5 hash of text in hexadecimal format",
 		"author":"Ivan",
 		"icon":"fingerprint",
 		"tags":"strip,slashes,remove"

@@ -6759,7 +6759,7 @@ var scripts = [];
 
 scripts.push({
   name: "ASCII To Hex",
-  description: "Converts ASCII characters to hexadecimal codes.",
+  description: "Converts ASCII text to hexadecimal representation",
   author: "aWZHY0yQH81uOYvH",
   icon: "metamorphose",
   tags: "ascii,hex,convert",
@@ -6768,7 +6768,7 @@ scripts.push({
 	{
 		"api":1,
 		"name":"ASCII To Hex",
-		"description":"Converts ASCII characters to hexadecimal codes.",
+		"description":"Converts ASCII text to hexadecimal representation",
 		"author":"aWZHY0yQH81uOYvH",
 		"icon":"metamorphose",
 		"tags":"ascii,hex,convert"
@@ -6791,7 +6791,7 @@ function main(state) {
 
 scripts.push({
   name: "Add Line Numbers",
-  description: "Adds line numbers to each line of your text",
+  description: "Prepends line numbers to each line with aligned spacing",
   author: "Flxify",
   icon: "list-ol",
   tags: "line,number,prefix,count,add",
@@ -6800,7 +6800,7 @@ scripts.push({
   {
     "api": 1,
     "name": "Add Line Numbers",
-    "description": "Adds line numbers to each line of your text",
+    "description": "Prepends line numbers to each line with aligned spacing",
     "author": "Flxify",
     "icon": "list-ol",
     "tags": "line,number,prefix,count,add"
@@ -6824,7 +6824,7 @@ function main(state) {
 
 scripts.push({
   name: "Add Slashes",
-  description: "Escapes your text.",
+  description: "Escapes quotes, backslashes, and null characters with backslashes",
   author: "Ivan",
   icon: "quote",
   tags: "add,slashes,escape",
@@ -6833,7 +6833,7 @@ scripts.push({
 	{
 		"api":1,
 		"name":"Add Slashes",
-		"description":"Escapes your text.",
+		"description":"Escapes quotes, backslashes, and null characters with backslashes",
 		"author":"Ivan",
 		"icon":"quote",
 		"tags":"add,slashes,escape"
@@ -6864,7 +6864,7 @@ function main(input) {
 
 scripts.push({
   name: "Android Strings to iOS Localizables",
-  description: "Converts Android Strings to iOS localizables.",
+  description: "Converts Android strings.xml format to iOS Localizable.strings format",
   author: "Manuel Kunz (https://github.com/KunzManuel)",
   icon: "translation",
   tags: "string,android,ios",
@@ -6873,7 +6873,7 @@ scripts.push({
   {
     "api":1,
     "name":"Android Strings to iOS Localizables",
-    "description":"Converts Android Strings to iOS localizables.",
+    "description":"Converts Android strings.xml format to iOS Localizable.strings format",
     "author":"Manuel Kunz (https://github.com/KunzManuel)",
     "icon":"translation",
     "tags":"string,android,ios"
@@ -6900,7 +6900,7 @@ function main(input) {
 
 scripts.push({
   name: "Base64 Decode",
-  description: "Decodes your text from Base64",
+  description: "Decodes Base64-encoded text back to plain text",
   author: "See Source",
   icon: "metamorphose",
   tags: "base64,btoa,decode",
@@ -6909,7 +6909,7 @@ scripts.push({
 	{
 		"api":1,
 		"name":"Base64 Decode",
-		"description":"Decodes your text from Base64",
+		"description":"Decodes Base64-encoded text back to plain text",
 		"author":"See Source",
 		"icon":"metamorphose",
 		"tags":"base64,btoa,decode"
@@ -6930,7 +6930,7 @@ function main(input) {
 
 scripts.push({
   name: "Base64 Encode",
-  description: "Encodes your text to Base64",
+  description: "Encodes text to Base64 format for safe data transfer",
   author: "See Source",
   icon: "metamorphose",
   tags: "base64,atob,encode",
@@ -6939,7 +6939,7 @@ scripts.push({
 	{
 		"api":1,
 		"name":"Base64 Encode",
-		"description":"Encodes your text to Base64",
+		"description":"Encodes text to Base64 format for safe data transfer",
 		"author":"See Source",
 		"icon":"metamorphose",
 		"tags":"base64,atob,encode"
@@ -6960,7 +6960,7 @@ function main(input) {
 
 scripts.push({
   name: "Binary to Decimal",
-  description: "Converts binary values to decimal.",
+  description: "Converts binary numbers to decimal, processing each line separately",
   author: "Maurice",
   icon: "metamorphose",
   tags: "decimal,binary,dec,bin",
@@ -6969,7 +6969,7 @@ scripts.push({
  {
    "api": 1,
    "name": "Binary to Decimal",
-   "description": "Converts binary values to decimal.",
+   "description": "Converts binary numbers to decimal, processing each line separately",
    "author": "Maurice",
    "icon": "metamorphose",
    "tags": "decimal,binary,dec,bin"
@@ -7003,7 +7003,7 @@ function main(state) {
 
 scripts.push({
   name: "CSV to JSON",
-  description: "Converts comma-separated tables to JSON.",
+  description: "Converts CSV to JSON array of objects using first row as headers",
   author: "Ivan",
   icon: "table",
   tags: "table,convert",
@@ -7012,7 +7012,7 @@ scripts.push({
 	{
 		"api":2,
 		"name":"CSV to JSON",
-		"description":"Converts comma-separated tables to JSON.",
+		"description":"Converts CSV to JSON array of objects using first row as headers",
 		"author":"Ivan",
 		"icon":"table",
 		"tags":"table,convert",
@@ -7037,7 +7037,7 @@ function main(state) {
 
 scripts.push({
   name: "CSV to JSON (headerless)",
-  description: "Converts comma-separated, headerless tables to JSON.",
+  description: "Converts CSV to JSON array of arrays without using headers",
   author: "Flare576",
   icon: "table",
   tags: "table,convert",
@@ -7046,14 +7046,14 @@ scripts.push({
 {
     "api":1,
     "name":"CSV to JSON (headerless)",
-    "description":"Converts comma-separated, headerless tables to JSON.",
+    "description":"Converts CSV to JSON array of arrays without using headers",
     "author":"Flare576",
     "icon":"table",
     "tags":"table,convert",
     "bias": -0.2
 }
  **/
-const Papa = require('@boop/papaparse.js');
+const Papa = require('@flxify/papaparse');
 
 function main(state) {
     try {
@@ -7061,7 +7061,7 @@ function main(state) {
         state.text = JSON.stringify(data, null, 2);
     }
     catch(error) {
-        state.text = error;
+        state.text = error.message || String(error);
         state.postError("Invalid CSV")
     }
 }
@@ -7072,7 +7072,7 @@ function main(state) {
 
 scripts.push({
   name: "Calculate Size (Bytes)",
-  description: "Calculates size of text in Bytes",
+  description: "Calculates UTF-8 byte size of text and displays in bytes, KB, or MB",
   author: "zzz",
   icon: "counter",
   tags: "calc,size,bytes,storage",
@@ -7081,7 +7081,7 @@ scripts.push({
 {
   "api": 1,
   "name": "Calculate Size (Bytes)",
-  "description": "Calculates size of text in Bytes",
+  "description": "Calculates UTF-8 byte size of text and displays in bytes, KB, or MB",
   "author": "zzz",
   "icon": "counter",
   "tags": "calc,size,bytes,storage"
@@ -7131,7 +7131,7 @@ function main(input) {
 
 scripts.push({
   name: "Camel Case",
-  description: "convertsYourTextToCamelCase",
+  description: "Converts text to camelCase format, removing spaces and capitalizing words",
   author: "Ivan",
   icon: "camel",
   tags: "camel,case,function,lodash",
@@ -7140,7 +7140,7 @@ scripts.push({
 	{
 		"api":1,
 		"name":"Camel Case",
-		"description":"convertsYourTextToCamelCase",
+		"description":"Converts text to camelCase format, removing spaces and capitalizing words",
 		"author":"Ivan",
 		"icon":"camel",
 		"tags":"camel,case,function,lodash"
@@ -7161,7 +7161,7 @@ function main(input) {
 
 scripts.push({
   name: "Collapse lines",
-  description: "Removes all linebreaks from your text",
+  description: "Removes all line breaks, joining text into a single line",
   author: "Dennis",
   icon: "collapse",
   tags: "strip,remove,collapse,join",
@@ -7170,7 +7170,7 @@ scripts.push({
     {
         "api":1,
         "name":"Collapse lines",
-        "description":"Removes all linebreaks from your text",
+        "description":"Removes all line breaks, joining text into a single line",
         "author":"Dennis",
         "icon":"collapse",
         "tags":"strip,remove,collapse,join"
@@ -7189,7 +7189,7 @@ function main(input) {
 
 scripts.push({
   name: "Count Characters",
-  description: "Get the length of your text",
+  description: "Counts the total number of characters in text",
   author: "Ivan",
   icon: "counter",
   tags: "count,length,size,character",
@@ -7198,7 +7198,7 @@ scripts.push({
 	{
 		"api":1,
 		"name":"Count Characters",
-		"description":"Get the length of your text",
+		"description":"Counts the total number of characters in text",
 		"author":"Ivan",
 		"icon":"counter",
 		"tags":"count,length,size,character"
@@ -7220,7 +7220,7 @@ function main(input) {
 
 scripts.push({
   name: "Count Lines",
-  description: "Get the line count of your text",
+  description: "Counts the total number of lines in text",
   author: "andipaetzold",
   icon: "counter",
   tags: "count,length,size,line",
@@ -7229,7 +7229,7 @@ scripts.push({
 	{
 		"api":1,
 		"name":"Count Lines",
-		"description":"Get the line count of your text",
+		"description":"Counts the total number of lines in text",
 		"author":"andipaetzold",
 		"icon":"counter",
 		"tags":"count,length,size,line"
@@ -7248,7 +7248,7 @@ function main(input) {
 
 scripts.push({
   name: "Count Words",
-  description: "Get the word count of your text",
+  description: "Counts the total number of words in text",
   author: "Daniel Stone",
   icon: "counter",
   tags: "count,length,size,words",
@@ -7257,7 +7257,7 @@ scripts.push({
   {
     "api":1,
     "name":"Count Words",
-    "description":"Get the word count of your text",
+    "description":"Counts the total number of words in text",
     "author":"Daniel Stone",
     "icon":"counter",
     "tags":"count,length,size,words"
@@ -7274,7 +7274,7 @@ function main(input) {
 
 scripts.push({
   name: "Create Project Glossary Markdown File",
-  description: "Type 'help' and run this script for instructions.",
+  description: "Generates a markdown glossary template with A-Z sections for project documentation",
   author: "Terry L. Lewis",
   icon: "colosseum",
   tags: "markdown,glossary",
@@ -7283,7 +7283,7 @@ scripts.push({
 	{
 		"api":1,
 		"name":"Create Project Glossary Markdown File",
-		"description":"Type 'help' and run this script for instructions.",
+		"description":"Generates a markdown glossary template with A-Z sections for project documentation",
 		"author":"Terry L. Lewis",
 		"icon":"colosseum",
         "tags":"markdown,glossary",
@@ -7417,7 +7417,7 @@ The "includeSamples" parameter is optional and defaults to [false].
 
 scripts.push({
   name: "Digi to ASCII",
-  description: "Digi to ASCII",
+  description: "Converts space or comma-separated ASCII codes to text characters",
   author: "Joseph Ng Rong En",
   icon: "dice",
   tags: "ascii,digi",
@@ -7426,7 +7426,7 @@ scripts.push({
 {
   "api": 1,
   "name": "Digi to ASCII",
-  "description": "Digi to ASCII",
+  "description": "Converts space or comma-separated ASCII codes to text characters",
   "author": "Joseph Ng Rong En",
   "icon": "dice",
   "tags": "ascii,digi"
@@ -7452,7 +7452,7 @@ function main(input) {
 
 scripts.push({
   name: "Date to Timestamp",
-  description: "Converts dates to Unix timestamp.",
+  description: "Converts readable date strings to Unix timestamp (seconds since epoch)",
   author: "Noah Halford",
   icon: "watch",
   tags: "date,time,calendar,unix,timestamp",
@@ -7461,7 +7461,7 @@ scripts.push({
     {
         "api":1,
         "name":"Date to Timestamp",
-        "description":"Converts dates to Unix timestamp.",
+        "description":"Converts readable date strings to Unix timestamp (seconds since epoch)",
         "author":"Noah Halford",
         "icon":"watch",
         "tags":"date,time,calendar,unix,timestamp"
@@ -7485,7 +7485,7 @@ function main(input) {
 
 scripts.push({
   name: "Date to UTC",
-  description: "Converts dates and timestamps to UTC dates",
+  description: "Converts date strings or Unix timestamps to UTC format",
   author: "Ivan",
   icon: "watch",
   tags: "date,time,calendar,unix,timestamp",
@@ -7494,7 +7494,7 @@ scripts.push({
 	{
 		"api":1,
 		"name":"Date to UTC",
-		"description":"Converts dates and timestamps to UTC dates",
+		"description":"Converts date strings or Unix timestamps to UTC format",
 		"author":"Ivan",
 		"icon":"watch",
 		"tags":"date,time,calendar,unix,timestamp"
@@ -7529,7 +7529,7 @@ function main(input) {
 
 scripts.push({
   name: "Deburr",
-  description: "Converts your text to basic latin characters.",
+  description: "Removes accents and diacritics, converting to basic Latin characters",
   author: "Ivan",
   icon: "colosseum",
   tags: "burr,special,characters,function,lodash",
@@ -7538,7 +7538,7 @@ scripts.push({
 	{
 		"api":1,
 		"name":"Deburr",
-		"description":"Converts your text to basic latin characters.",
+		"description":"Removes accents and diacritics, converting to basic Latin characters",
 		"author":"Ivan",
 		"icon":"colosseum",
 		"tags":"burr,special,characters,function,lodash"
@@ -7559,7 +7559,7 @@ function main(input) {
 
 scripts.push({
   name: "Decimal to Binary",
-  description: "Converts decimal values to binary.",
+  description: "Converts decimal numbers to binary, processing each line separately",
   author: "Maurice",
   icon: "metamorphose",
   tags: "decimal,binary,dec,bin",
@@ -7568,7 +7568,7 @@ scripts.push({
  {
    "api": 1,
    "name": "Decimal to Binary",
-   "description": "Converts decimal values to binary.",
+   "description": "Converts decimal numbers to binary, processing each line separately",
    "author": "Maurice",
    "icon": "metamorphose",
    "tags": "decimal,binary,dec,bin"
@@ -7602,7 +7602,7 @@ function main(state) {
 
 scripts.push({
   name: "Decimal to Hex",
-  description: "Converts decimal values to hexadecimal.",
+  description: "Converts decimal numbers to hexadecimal, processing each line separately",
   author: "Maurice",
   icon: "metamorphose",
   tags: "decimal,hexadecimal,dec,hex",
@@ -7611,7 +7611,7 @@ scripts.push({
  {
    "api": 1,
    "name": "Decimal to Hex",
-   "description": "Converts decimal values to hexadecimal.",
+   "description": "Converts decimal numbers to hexadecimal, processing each line separately",
    "author": "Maurice",
    "icon": "metamorphose",
    "tags": "decimal,hexadecimal,dec,hex"
@@ -7644,7 +7644,7 @@ function main(state) {
 
 scripts.push({
   name: "Defang",
-  description: "Defangs dangerous URLs and other IOCs",
+  description: "Makes URLs non-clickable by replacing dots and protocols for safe sharing",
   author: "Ross",
   icon: "link",
   tags: "defang,url,ioc",
@@ -7653,7 +7653,7 @@ scripts.push({
   {
     "api":1,
     "name":"Defang",
-    "description":"Defangs dangerous URLs and other IOCs",
+    "description":"Makes URLs non-clickable by replacing dots and protocols for safe sharing",
     "author":"Ross",
     "icon":"link",
     "tags":"defang,url,ioc"
@@ -7674,7 +7674,7 @@ function main(input) {
 
 scripts.push({
   name: "Downcase",
-  description: "Converts your text to lowercase.",
+  description: "Converts all text to lowercase",
   author: "Dan2552",
   icon: "type",
   tags: "downcase,lowercase",
@@ -7683,7 +7683,7 @@ scripts.push({
     {
         "api":1,
         "name":"Downcase",
-        "description":"Converts your text to lowercase.",
+        "description":"Converts all text to lowercase",
         "author":"Dan2552",
         "icon":"type",
         "tags":"downcase,lowercase"
@@ -7702,7 +7702,7 @@ function main(input) {
 
 scripts.push({
   name: "Eval Javascript",
-  description: "Runs your text as Javascript Code.",
+  description: "Executes JavaScript code and appends the output as a comment",
   author: "Sebastiaan Besselsen",
   icon: "command",
   tags: "js,script,run",
@@ -7711,7 +7711,7 @@ scripts.push({
      {
          "api":1,
          "name":"Eval Javascript",
-         "description":"Runs your text as Javascript Code.",
+         "description":"Executes JavaScript code and appends the output as a comment",
          "author":"Sebastiaan Besselsen",
          "icon":"command",
          "tags":"js,script,run"
@@ -7740,7 +7740,7 @@ function main(input) {
 
 scripts.push({
   name: "Extract Emails",
-  description: "Extracts all email addresses from your text",
+  description: "Extracts all unique email addresses from text, one per line",
   author: "Flxify",
   icon: "envelope",
   tags: "email,extract,address,scrape",
@@ -7749,7 +7749,7 @@ scripts.push({
   {
     "api": 1,
     "name": "Extract Emails",
-    "description": "Extracts all email addresses from your text",
+    "description": "Extracts all unique email addresses from text, one per line",
     "author": "Flxify",
     "icon": "envelope",
     "tags": "email,extract,address,scrape"
@@ -7773,7 +7773,7 @@ function main(state) {
 
 scripts.push({
   name: "Extract URLs",
-  description: "Extracts all URLs from your text",
+  description: "Extracts all unique HTTP/HTTPS URLs from text, one per line",
   author: "Flxify",
   icon: "link",
   tags: "url,link,extract,http,https,scrape",
@@ -7782,7 +7782,7 @@ scripts.push({
   {
     "api": 1,
     "name": "Extract URLs",
-    "description": "Extracts all URLs from your text",
+    "description": "Extracts all unique HTTP/HTTPS URLs from text, one per line",
     "author": "Flxify",
     "icon": "link",
     "tags": "url,link,extract,http,https,scrape"
@@ -7806,7 +7806,7 @@ function main(state) {
 
 scripts.push({
   name: "Fish PATH Hex Converter",
-  description: "Escapes terminal characters.",
+  description: "Escapes special characters to hex for Fish shell PATH variables",
   author: "Paul Seelman",
   icon: "broom",
   tags: "fish_user_paths, fish, hex, ascii, path, var",
@@ -7815,7 +7815,7 @@ scripts.push({
 {
   "api": 1,
   "name": "Fish PATH Hex Converter",
-  "description": "Escapes terminal characters.",
+  "description": "Escapes special characters to hex for Fish shell PATH variables",
   "author": "Paul Seelman",
   "icon": "broom",
   "tags": "fish_user_paths, fish, hex, ascii, path, var"
@@ -7859,7 +7859,7 @@ function main(input) {
 
 scripts.push({
   name: "Format CSS",
-  description: "Cleans and format CSS stylesheets.",
+  description: "Formats CSS with proper indentation and line breaks",
   author: "Ivan",
   icon: "broom",
   tags: "css,prettify,clean,indent",
@@ -7868,7 +7868,7 @@ scripts.push({
 	{
 		"api":1,
 		"name":"Format CSS",
-		"description":"Cleans and format CSS stylesheets.",
+		"description":"Formats CSS with proper indentation and line breaks",
 		"author":"Ivan",
 		"icon":"broom",
 		"tags":"css,prettify,clean,indent",
@@ -7889,7 +7889,7 @@ function main(state) {
 
 scripts.push({
   name: "Format JSON",
-  description: "Cleans and format JSON documents.",
+  description: "Formats JSON with proper indentation and validates syntax",
   author: "Ivan",
   icon: "broom",
   tags: "json,prettify,clean,indent",
@@ -7898,7 +7898,7 @@ scripts.push({
 	{
 		"api":1,
 		"name":"Format JSON",
-		"description":"Cleans and format JSON documents.",
+		"description":"Formats JSON with proper indentation and validates syntax",
 		"author":"Ivan",
 		"icon":"broom",
 		"tags":"json,prettify,clean,indent"
@@ -7924,7 +7924,7 @@ function main(state) {
 
 scripts.push({
   name: "Format SQL",
-  description: "Cleans and format SQL queries.",
+  description: "Formats SQL queries with proper indentation and line breaks",
   author: "Ivan",
   icon: "broom",
   tags: "mysql,sql,prettify,clean,indent",
@@ -7933,7 +7933,7 @@ scripts.push({
 	{
 		"api":1,
 		"name":"Format SQL",
-		"description":"Cleans and format SQL queries.",
+		"description":"Formats SQL queries with proper indentation and line breaks",
 		"author":"Ivan",
 		"icon":"broom",
 		"tags":"mysql,sql,prettify,clean,indent",
@@ -7954,7 +7954,7 @@ function main(state) {
 
 scripts.push({
   name: "Format XML",
-  description: "Cleans and format XML/HTML documents.",
+  description: "Formats XML and HTML with proper indentation and line breaks",
   author: "Ivan",
   icon: "broom",
   tags: "html,prettify,clean,indent",
@@ -7963,7 +7963,7 @@ scripts.push({
 	{
 		"api":1,
 		"name":"Format XML",
-		"description":"Cleans and format XML/HTML documents.",
+		"description":"Formats XML and HTML with proper indentation and line breaks",
 		"author":"Ivan",
 		"icon":"broom",
 		"tags":"html,prettify,clean,indent",
@@ -7984,7 +7984,7 @@ function main(state) {
 
 scripts.push({
   name: "From string from unicode scaped",
-  description: "Returns a readable string from the unicode scaped string (js format)",
+  description: "Decodes Unicode escape sequences (\\uXXXX) to readable text",
   author: "luisfontes19",
   icon: "broom",
   tags: "string,normalize,convert,readable,unicode",
@@ -7994,7 +7994,7 @@ scripts.push({
   {
     "api":1,
     "name":"From string from unicode scaped",
-    "description":"Returns a readable string from the unicode scaped string (js format)",
+    "description":"Decodes Unicode escape sequences (\\uXXXX) to readable text",
     "author":"luisfontes19",
     "icon":"broom",
     "tags":"string,normalize,convert,readable,unicode"
@@ -8016,7 +8016,7 @@ function fromUnicode(str) {
 
 scripts.push({
   name: "HTML Decode",
-  description: "Decodes HTML entities in your text",
+  description: "Decodes HTML entities to readable characters (e.g., &amp; to &)",
   author: "See Source",
   icon: "HTML",
   tags: "html,decode,web",
@@ -8025,7 +8025,7 @@ scripts.push({
 	{
 		"api":1,
 		"name":"HTML Decode",
-		"description":"Decodes HTML entities in your text",
+		"description":"Decodes HTML entities to readable characters (e.g., &amp; to &)",
 		"author":"See Source",
 		"icon":"HTML",
 		"tags":"html,decode,web"
@@ -8044,7 +8044,7 @@ function main(input) {
 
 scripts.push({
   name: "HTML Encode",
-  description: "Encodes HTML entities in your text",
+  description: "Encodes special characters to HTML entities (e.g., & to &amp;)",
   author: "See Source",
   icon: "HTML",
   tags: "html,encode,web",
@@ -8053,7 +8053,7 @@ scripts.push({
 	{
 		"api":1,
 		"name":"HTML Encode",
-		"description":"Encodes HTML entities in your text",
+		"description":"Encodes special characters to HTML entities (e.g., & to &amp;)",
 		"author":"See Source",
 		"icon":"HTML",
 		"tags":"html,encode,web"
@@ -8072,7 +8072,7 @@ function main(input) {
 
 scripts.push({
   name: "HTML Encode all characters",
-  description: "HTML Encodes every character in your text",
+  description: "Encodes every character to HTML numeric entities for obfuscation",
   author: "Ivan",
   icon: "HTML",
   tags: "html,encode,web,email",
@@ -8081,7 +8081,7 @@ scripts.push({
     {
         "api":1,
         "name":"HTML Encode all characters",
-        "description":"HTML Encodes every character in your text",
+        "description":"Encodes every character to HTML numeric entities for obfuscation",
         "author":"Ivan",
         "icon":"HTML",
         "tags":"html,encode,web,email",
@@ -8104,7 +8104,7 @@ function main(input) {
 
 scripts.push({
   name: "Hex To ASCII",
-  description: "Converts hexadecimal values into ASCII characters",
+  description: "Converts hexadecimal representation to ASCII text",
   author: "aWZHY0yQH81uOYvH",
   icon: "metamorphose",
   tags: "hex,ascii,convert",
@@ -8113,7 +8113,7 @@ scripts.push({
 	{
 		"api":1,
 		"name":"Hex To ASCII",
-		"description":"Converts hexadecimal values into ASCII characters",
+		"description":"Converts hexadecimal representation to ASCII text",
 		"author":"aWZHY0yQH81uOYvH",
 		"icon":"metamorphose",
 		"tags":"hex,ascii,convert"
@@ -8146,7 +8146,7 @@ function main(state) {
 
 scripts.push({
   name: "Hex to Dec",
-  description: "Converts hexadecimal to decimal.",
+  description: "Converts hexadecimal numbers to decimal, processing each line separately",
   author: "Maurice",
   icon: "metamorphose",
   tags: "decimal,hexadecimal,dec,hex",
@@ -8155,7 +8155,7 @@ scripts.push({
  {
    "api": 1,
    "name": "Hex to Dec",
-   "description": "Converts hexadecimal to decimal.",
+   "description": "Converts hexadecimal numbers to decimal, processing each line separately",
    "author": "Maurice",
    "icon": "metamorphose",
    "tags": "decimal,hexadecimal,dec,hex"
@@ -8189,7 +8189,7 @@ function main(state) {
 
 scripts.push({
   name: "Hex to RGB",
-  description: "Convert color in hexadecimal to RGB.",
+  description: "Converts hex color codes to RGB format (e.g., #FF5733 to 255,87,51)",
   author: "Venkat",
   icon: "color-wheel",
   tags: "hex,color,rgb,convert",
@@ -8198,7 +8198,7 @@ scripts.push({
      {
          "api":1,
          "name":"Hex to RGB",
-         "description":"Convert color in hexadecimal to RGB.",
+         "description":"Converts hex color codes to RGB format (e.g., #FF5733 to 255,87,51)",
          "author":"Venkat",
          "icon":"color-wheel",
          "tags":"hex,color,rgb,convert"
@@ -8226,7 +8226,7 @@ function cutHex(h) { return (h.charAt(0)=="#") ? h.substring(1,7) : h}
 
 scripts.push({
   name: "iOS Localizables to Android Strings",
-  description: "Converts iOS Localizables to Android Strings",
+  description: "Converts iOS Localizable.strings format to Android strings.xml format",
   author: "Manuel Kunz (https://github.com/KunzManuel)",
   icon: "translation",
   tags: "string,android,ios",
@@ -8235,7 +8235,7 @@ scripts.push({
   {
     "api":1,
     "name":"iOS Localizables to Android Strings",
-    "description":"Converts iOS Localizables to Android Strings",
+    "description":"Converts iOS Localizable.strings format to Android strings.xml format",
     "author":"Manuel Kunz (https://github.com/KunzManuel)",
     "icon":"translation",
     "tags":"string,android,ios"
@@ -8266,7 +8266,7 @@ function main(input) {
 
 scripts.push({
   name: "JSON to CSV",
-  description: "Converts JSON to comma-separated tables.",
+  description: "Converts JSON array of objects to CSV format with headers",
   author: "Ivan",
   icon: "table",
   tags: "table,convert",
@@ -8275,7 +8275,7 @@ scripts.push({
 	{
 		"api":1,
 		"name":"JSON to CSV",
-		"description":"Converts JSON to comma-separated tables.",
+		"description":"Converts JSON array of objects to CSV format with headers",
 		"author":"Ivan",
 		"icon":"table",
 		"tags":"table,convert",
@@ -8306,7 +8306,7 @@ function main(state) {
 
 scripts.push({
   name: "JSON to Query String",
-  description: "Converts JSON to URL query string.",
+  description: "Converts JSON object to URL query string parameters",
   author: "Ota Mares <ota@mares.one>",
   icon: "website",
   tags: "url,query,params,json,convert,encode",
@@ -8315,7 +8315,7 @@ scripts.push({
 	{
 		"api":1,
 		"name":"JSON to Query String",
-		"description":"Converts JSON to URL query string.",
+		"description":"Converts JSON object to URL query string parameters",
 		"author":"Ota Mares <ota@mares.one>",
 		"icon":"website",
 		"tags":"url,query,params,json,convert,encode"
@@ -8360,7 +8360,7 @@ function main(input)
 
 scripts.push({
   name: "JSON to YAML",
-  description: "Converts JSON to YAML.",
+  description: "Converts JSON to YAML format",
   author: "Ivan",
   icon: "metamorphose",
   tags: "markup,convert",
@@ -8369,7 +8369,7 @@ scripts.push({
 	{
 		"api":1,
 		"name":"JSON to YAML",
-		"description":"Converts JSON to YAML.",
+		"description":"Converts JSON to YAML format",
 		"author":"Ivan",
 		"icon":"metamorphose",
 		"tags":"markup,convert"
@@ -8393,7 +8393,7 @@ function main(input) {
 
 scripts.push({
   name: "JWT Decode",
-  description: "Converts JWTs to JSON",
+  description: "Decodes JWT tokens and displays header, payload, and signature as JSON",
   author: "Nils Sonemann",
   icon: "identification",
   tags: "decode,jwt,token",
@@ -8402,7 +8402,7 @@ scripts.push({
   {
     "api":1,
     "name":"JWT Decode",
-    "description":"Converts JWTs to JSON",
+    "description":"Decodes JWT tokens and displays header, payload, and signature as JSON",
     "author":"Nils Sonemann",
     "icon":"identification",
     "tags":"decode,jwt,token"
@@ -8444,7 +8444,7 @@ function main(input) {
 
 scripts.push({
   name: "Join Lines",
-  description: "Joins all lines without any delimiter.",
+  description: "Joins all lines together with no separator or delimiter",
   author: "riesentoaster",
   icon: "collapse",
   tags: "join",
@@ -8453,7 +8453,7 @@ scripts.push({
 	{
 		"api":1,
 		"name":"Join Lines",
-		"description":"Joins all lines without any delimiter.",
+		"description":"Joins all lines together with no separator or delimiter",
 		"author":"riesentoaster",
 		"icon":"collapse",
 		"tags":"join"
@@ -8470,7 +8470,7 @@ function main(input) {
 
 scripts.push({
   name: "Join Lines With Comma",
-  description: "Joins all lines with a comma.",
+  description: "Joins all lines together separated by commas",
   author: "riesentoaster",
   icon: "collapse",
   tags: "join, comma",
@@ -8479,7 +8479,7 @@ scripts.push({
 	{
 		"api":1,
 		"name":"Join Lines With Comma",
-		"description":"Joins all lines with a comma.",
+		"description":"Joins all lines together separated by commas",
 		"author":"riesentoaster",
 		"icon":"collapse",
 		"tags":"join, comma",
@@ -8497,7 +8497,7 @@ function main(input) {
 
 scripts.push({
   name: "Join Lines With Space",
-  description: "Joins all lines with a space",
+  description: "Joins all lines together separated by spaces",
   author: "riesentoaster",
   icon: "collapse",
   tags: "join, space",
@@ -8506,7 +8506,7 @@ scripts.push({
 	{
 		"api":1,
 		"name":"Join Lines With Space",
-		"description":"Joins all lines with a space",
+		"description":"Joins all lines together separated by spaces",
 		"author":"riesentoaster",
 		"icon":"collapse",
 		"tags":"join, space",
@@ -8524,7 +8524,7 @@ function main(input) {
 
 scripts.push({
   name: "JS Object to JSON",
-  description: "Converts a javascript object to JSON format",
+  description: "Converts JavaScript object literals to valid JSON format",
   author: "luisfontes19",
   icon: "HTML",
   tags: "json,js,object,convert",
@@ -8533,7 +8533,7 @@ scripts.push({
     {
         "api":1,
         "name":"JS Object to JSON",
-        "description":"Converts a javascript object to JSON format",
+        "description":"Converts JavaScript object literals to valid JSON format",
         "author":"luisfontes19",
         "icon":"HTML",
         "tags":"json,js,object,convert",
@@ -8558,7 +8558,7 @@ function main(state) {
 
 scripts.push({
   name: "Kebab Case",
-  description: "converts-your-text-to-kebab-case.",
+  description: "Converts text to kebab-case format, separating words with hyphens",
   author: "Ivan",
   icon: "kebab",
   tags: "kebab,case,function,lodash",
@@ -8567,7 +8567,7 @@ scripts.push({
 	{
 		"api":1,
 		"name":"Kebab Case",
-		"description":"converts-your-text-to-kebab-case.",
+		"description":"Converts text to kebab-case format, separating words with hyphens",
 		"author":"Ivan",
 		"icon":"kebab",
 		"tags":"kebab,case,function,lodash"
@@ -8588,7 +8588,7 @@ function main(input) {
 
 scripts.push({
   name: "Line compare",
-  description: "Check if existing lines have all the same content",
+  description: "Checks if all lines match the first line and reports differences",
   author: "Luis Fontes",
   icon: "type",
   tags: "string,match,text,compare,line",
@@ -8597,7 +8597,7 @@ scripts.push({
     {
         "api":1,
         "name":"Line compare",
-        "description":"Check if existing lines have all the same content",
+        "description":"Checks if all lines match the first line and reports differences",
         "author":"Luis Fontes",
         "icon":"type",
         "tags":"string,match,text,compare,line",
@@ -8630,7 +8630,7 @@ function main(state) {
 
 scripts.push({
   name: "Lorem Ipsum",
-  description: "Generates Lorem Ipsum placeholder text.",
+  description: "Generates random Lorem Ipsum placeholder text (100 words)",
   author: "luisfontes19",
   icon: "type",
   tags: "generate,lorem,ipsum,text",
@@ -8639,7 +8639,7 @@ scripts.push({
     {
         "api":1,
         "name":"Lorem Ipsum",
-        "description":"Generates Lorem Ipsum placeholder text.",
+        "description":"Generates random Lorem Ipsum placeholder text (100 words)",
         "author":"luisfontes19",
         "icon":"type",
         "tags":"generate,lorem,ipsum,text",
@@ -8659,7 +8659,11 @@ function main(state) {
 
     sentence = sentence.charAt(0).toUpperCase() + sentence.slice(1).trim() + ".";
 
-    state.text = sentence;
+    if (state.isSelection) {
+        state.text = sentence;
+    } else {
+        state.insert(sentence);
+    }
 }
 
     if (typeof main === "function") main(state);
@@ -8668,7 +8672,7 @@ function main(state) {
 
 scripts.push({
   name: "MD5 Checksum",
-  description: "Computes the checksum of your text (Hex encoded).",
+  description: "Generates MD5 hash of text in hexadecimal format",
   author: "Ivan",
   icon: "fingerprint",
   tags: "strip,slashes,remove",
@@ -8677,7 +8681,7 @@ scripts.push({
 	{
 		"api":1,
 		"name":"MD5 Checksum",
-		"description":"Computes the checksum of your text (Hex encoded).",
+		"description":"Generates MD5 hash of text in hexadecimal format",
 		"author":"Ivan",
 		"icon":"fingerprint",
 		"tags":"strip,slashes,remove"
@@ -8697,7 +8701,7 @@ function main(state) {
 
 scripts.push({
   name: "Markdown Quote",
-  description: "Adds > to the start of every line of your text.",
+  description: "Prefixes each line with > to create markdown blockquotes",
   author: "Dan2552",
   icon: "term",
   tags: "quote,markdown",
@@ -8706,7 +8710,7 @@ scripts.push({
     {
         "api":1,
         "name":"Markdown Quote",
-        "description":"Adds > to the start of every line of your text.",
+        "description":"Prefixes each line with > to create markdown blockquotes",
         "author":"Dan2552",
         "icon":"term",
         "tags":"quote,markdown"
@@ -8723,7 +8727,7 @@ function main(input) {
 
 scripts.push({
   name: "Minify CSS",
-  description: "Cleans and minifies CSS stylesheets.",
+  description: "Removes whitespace and comments to compress CSS",
   author: "Ivan",
   icon: "broom",
   tags: "css,minify,clean,indent",
@@ -8732,7 +8736,7 @@ scripts.push({
 	{
 		"api":1,
 		"name":"Minify CSS",
-		"description":"Cleans and minifies CSS stylesheets.",
+		"description":"Removes whitespace and comments to compress CSS",
 		"author":"Ivan",
 		"icon":"broom",
 		"tags":"css,minify,clean,indent",
@@ -8753,7 +8757,7 @@ function main(state) {
 
 scripts.push({
   name: "Minify JSON",
-  description: "Cleans and minifies JSON documents.",
+  description: "Removes whitespace to compress JSON into a single line",
   author: "riesentoaster",
   icon: "broom",
   tags: "html,minify,clean,indent",
@@ -8762,7 +8766,7 @@ scripts.push({
 	{
 		"api":1,
 		"name":"Minify JSON",
-		"description":"Cleans and minifies JSON documents.",
+		"description":"Removes whitespace to compress JSON into a single line",
 		"author":"riesentoaster",
 		"icon":"broom",
 		"tags":"html,minify,clean,indent",
@@ -8780,7 +8784,7 @@ function main(input) {
 
 scripts.push({
   name: "Minify SQL",
-  description: "Cleans and minifies SQL queries.",
+  description: "Removes whitespace and comments to compress SQL queries",
   author: "Ivan",
   icon: "broom",
   tags: "mysql,sql,minify,clean,indent",
@@ -8789,7 +8793,7 @@ scripts.push({
 	{
 		"api":1,
 		"name":"Minify SQL",
-		"description":"Cleans and minifies SQL queries.",
+		"description":"Removes whitespace and comments to compress SQL queries",
 		"author":"Ivan",
 		"icon":"broom",
 		"tags":"mysql,sql,minify,clean,indent",
@@ -8810,7 +8814,7 @@ function main(state) {
 
 scripts.push({
   name: "Minify XML",
-  description: "Cleans and minifies XML/HTML documents.",
+  description: "Removes whitespace and comments to compress XML and HTML",
   author: "Ivan",
   icon: "broom",
   tags: "html,minify,clean,indent",
@@ -8819,7 +8823,7 @@ scripts.push({
 	{
 		"api":1,
 		"name":"Minify XML",
-		"description":"Cleans and minifies XML/HTML documents.",
+		"description":"Removes whitespace and comments to compress XML and HTML",
 		"author":"Ivan",
 		"icon":"broom",
 		"tags":"html,minify,clean,indent",
@@ -8840,7 +8844,7 @@ function main(state) {
 
 scripts.push({
   name: "Natural Sort Lines",
-  description: "Sort lines with smart handling of numbers.",
+  description: "Sorts lines alphabetically with natural number ordering (1, 2, 10 not 1, 10, 2)",
   author: "Sebastiaan Besselsen",
   icon: "sort-numbers",
   tags: "sort,natural,natsort",
@@ -8849,7 +8853,7 @@ scripts.push({
      {
          "api":1,
          "name":"Natural Sort Lines",
-         "description":"Sort lines with smart handling of numbers.",
+         "description":"Sorts lines alphabetically with natural number ordering (1, 2, 10 not 1, 10, 2)",
          "author":"Sebastiaan Besselsen",
          "icon":"sort-numbers",
          "tags":"sort,natural,natsort"
@@ -8873,7 +8877,7 @@ function main(input) {
 
 scripts.push({
   name: "New Boop Script",
-  description: "Returns a basic Boop script.",
+  description: "Inserts a template for creating new Flxify scripts",
   author: "tlewis",
   icon: "quote",
   tags: "boop,state,script,debug,new,create",
@@ -8882,7 +8886,7 @@ scripts.push({
 	{
 		"api":1,
 		"name":"New Boop Script",
-		"description":"Returns a basic Boop script.",
+		"description":"Inserts a template for creating new Flxify scripts",
 		"author":"tlewis",
 		"icon":"quote",
 		"tags":"boop,state,script,debug,new,create"
@@ -8891,7 +8895,11 @@ scripts.push({
 
 function main(state) {
 	try {
-		state.text = script
+		if (state.isSelection) {
+			state.text = script;
+		} else {
+			state.insert(script);
+		}
 	}
 	catch(error) {
 		state.postError("Something strange happened here...")
@@ -8937,7 +8945,7 @@ function main(state) {
 
 scripts.push({
   name: "PHP Unserialize",
-  description: "Convert PHP serialized data to JSON",
+  description: "Converts PHP serialized data to JSON format",
   author: "Rob Bogie",
   icon: "elephant",
   tags: "php,serialize,unserialize,json",
@@ -8946,7 +8954,7 @@ scripts.push({
   {
     "api":1,
     "name":"PHP Unserialize",
-    "description":"Convert PHP serialized data to JSON",
+    "description":"Converts PHP serialized data to JSON format",
     "author":"Rob Bogie",
     "icon":"elephant",
     "tags":"php,serialize,unserialize,json"
@@ -9118,7 +9126,7 @@ function unserialize(text, startPos = 0) {
 
 scripts.push({
   name: "Query String to JSON",
-  description: "Converts URL query string to JSON.",
+  description: "Converts URL query string parameters to JSON object",
   author: "Ota Mares <ota@mares.one>",
   icon: "website",
   tags: "url,query,params,json,convert,decode",
@@ -9127,7 +9135,7 @@ scripts.push({
 	{
 		"api":1,
 		"name":"Query String to JSON",
-		"description":"Converts URL query string to JSON.",
+		"description":"Converts URL query string parameters to JSON object",
 		"author":"Ota Mares <ota@mares.one>",
 		"icon":"website",
 		"tags":"url,query,params,json,convert,decode"
@@ -9171,7 +9179,7 @@ function main(input)
 
 scripts.push({
   name: "Refang",
-  description: "Removes defanging from dangerous URLs and other IOCs",
+  description: "Restores defanged URLs to clickable format (reverses defang operation)",
   author: "Ross",
   icon: "link",
   tags: "refang,url,ioc",
@@ -9180,7 +9188,7 @@ scripts.push({
   {
     "api":1,
     "name":"Refang",
-    "description":"Removes defanging from dangerous URLs and other IOCs",
+    "description":"Restores defanged URLs to clickable format (reverses defang operation)",
     "author":"Ross",
     "icon":"link",
     "tags":"refang,url,ioc"
@@ -9201,7 +9209,7 @@ function main(input) {
 
 scripts.push({
   name: "Regex Escape",
-  description: "Escapes special regex characters in your text",
+  description: "Escapes special regex characters for use in regular expressions",
   author: "Flxify",
   icon: "shield",
   tags: "regex,escape,regexp,regular,expression,special,characters",
@@ -9210,7 +9218,7 @@ scripts.push({
   {
     "api": 1,
     "name": "Regex Escape",
-    "description": "Escapes special regex characters in your text",
+    "description": "Escapes special regex characters for use in regular expressions",
     "author": "Flxify",
     "icon": "shield",
     "tags": "regex,escape,regexp,regular,expression,special,characters"
@@ -9230,7 +9238,7 @@ function main(state) {
 
 scripts.push({
   name: "Remove Duplicate Lines",
-  description: "Ensures each line of your text is unique.",
+  description: "Removes duplicate lines, keeping only the first occurrence of each",
   author: "andipaetzold",
   icon: "filtration",
   tags: "unique,duplicate",
@@ -9239,7 +9247,7 @@ scripts.push({
     {
         "api":1,
         "name":"Remove Duplicate Lines",
-        "description":"Ensures each line of your text is unique.",
+        "description":"Removes duplicate lines, keeping only the first occurrence of each",
         "author":"andipaetzold",
         "icon":"filtration",
         "tags":"unique,duplicate"
@@ -9266,7 +9274,7 @@ function unique(array) {
 
 scripts.push({
   name: "Remove Line Numbers",
-  description: "Strips line number prefixes from your text",
+  description: "Removes line number prefixes from each line",
   author: "Flxify",
   icon: "eraser",
   tags: "line,number,remove,strip,clean",
@@ -9275,7 +9283,7 @@ scripts.push({
   {
     "api": 1,
     "name": "Remove Line Numbers",
-    "description": "Strips line number prefixes from your text",
+    "description": "Removes line number prefixes from each line",
     "author": "Flxify",
     "icon": "eraser",
     "tags": "line,number,remove,strip,clean"
@@ -9296,7 +9304,7 @@ function main(state) {
 
 scripts.push({
   name: "Remove Slashes",
-  description: "Unescapes your text.",
+  description: "Removes backslash escapes from quotes and special characters",
   author: "Ivan",
   icon: "quote",
   tags: "strip,slashes,remove,unescape",
@@ -9305,7 +9313,7 @@ scripts.push({
 	{
 		"api":1,
 		"name":"Remove Slashes",
-		"description":"Unescapes your text.",
+		"description":"Removes backslash escapes from quotes and special characters",
 		"author":"Ivan",
 		"icon":"quote",
 		"tags":"strip,slashes,remove,unescape"
@@ -9351,7 +9359,7 @@ function main(input){
 
 scripts.push({
   name: "Replace Smart Quotes",
-  description: "Replace Smart Quotes with their simpler values.",
+  description: "Replaces curly/smart quotes with straight quotes",
   author: "Thomas Bauer (https://github.com/tbauer428)",
   icon: "broom",
   tags: "smart,quotes,quotations,quotation,smart-quotes,smart-quotations",
@@ -9360,7 +9368,7 @@ scripts.push({
 	{
 		"api":1,
 		"name":"Replace Smart Quotes",
-		"description":"Replace Smart Quotes with their simpler values.",
+		"description":"Replaces curly/smart quotes with straight quotes",
 		"author":"Thomas Bauer (https://github.com/tbauer428)",
 		"icon":"broom",
         "tags":"smart,quotes,quotations,quotation,smart-quotes,smart-quotations"
@@ -9380,7 +9388,7 @@ function main(input) {
 
 scripts.push({
   name: "Reverse Lines",
-  description: "Flips every line of your text.",
+  description: "Reverses the order of lines (last line becomes first)",
   author: "@Clarko",
   icon: "flip",
   tags: "reverse,order,invert,mirror,flip,upside,down",
@@ -9389,7 +9397,7 @@ scripts.push({
 	{
 		"api":1,
 		"name":"Reverse Lines",
-		"description":"Flips every line of your text.",
+		"description":"Reverses the order of lines (last line becomes first)",
 		"author":"@Clarko",
 		"icon":"flip",
 		"tags":"reverse,order,invert,mirror,flip,upside,down"
@@ -9407,7 +9415,7 @@ function main(input) {
 
 scripts.push({
   name: "Reverse String",
-  description: "!seod ti tahw sseuG",
+  description: "Reverses character order in text (supports Unicode and emoji)",
   author: "See Source",
   icon: "flip",
   tags: "flip,mirror,invert",
@@ -9416,7 +9424,7 @@ scripts.push({
 	{
 		"api":1,
 		"name":"Reverse String",
-		"description":"!seod ti tahw sseuG",
+		"description":"Reverses character order in text (supports Unicode and emoji)",
 		"author":"See Source",
 		"icon":"flip",
 		"tags":"flip,mirror,invert"
@@ -9486,7 +9494,7 @@ var reverse = function(string) {
 
 scripts.push({
   name: "Rot13",
-  description: "Applies the Rot13 cypher to your text.",
+  description: "Applies ROT13 cipher, shifting letters by 13 positions (reversible)",
   author: "Paul Starr",
   icon: "roman",
   tags: "spoilers,encryption,plaintext",
@@ -9495,7 +9503,7 @@ scripts.push({
   {
     "api":1,
     "name":"Rot13",
-    "description":"Applies the Rot13 cypher to your text.",
+    "description":"Applies ROT13 cipher, shifting letters by 13 positions (reversible)",
     "author":"Paul Starr",
     "icon":"roman",
     "tags":"spoilers,encryption,plaintext"
@@ -9519,7 +9527,7 @@ function main(state) {
 
 scripts.push({
   name: "SHA1 Hash",
-  description: "Computes the SHA1 hash of your text (Hex encoded)",
+  description: "Generates SHA1 hash of text in hexadecimal format",
   author: "",
   icon: "fingerprint",
   tags: "strip,slashes,remove",
@@ -9528,7 +9536,7 @@ scripts.push({
     {
         "api":1,
         "name":"SHA1 Hash",
-        "description":"Computes the SHA1 hash of your text (Hex encoded)",
+        "description":"Generates SHA1 hash of text in hexadecimal format",
         "icon":"fingerprint",
         "tags":"strip,slashes,remove"
     }
@@ -9547,7 +9555,7 @@ function main(state) {
 
 scripts.push({
   name: "SHA256 Hash",
-  description: "Computes the SHA256 hash of your text (Hex encoded)",
+  description: "Generates SHA256 hash of text in hexadecimal format",
   author: "",
   icon: "fingerprint",
   tags: "strip,slashes,remove",
@@ -9556,7 +9564,7 @@ scripts.push({
     {
         "api":1,
         "name":"SHA256 Hash",
-        "description":"Computes the SHA256 hash of your text (Hex encoded)",
+        "description":"Generates SHA256 hash of text in hexadecimal format",
         "icon":"fingerprint",
         "tags":"strip,slashes,remove"
     }
@@ -9574,7 +9582,7 @@ function main(state) {
 
 scripts.push({
   name: "SHA512 Hash",
-  description: "Computes the SHA512 hash of your text (Hex encoded)",
+  description: "Generates SHA512 hash of text in hexadecimal format",
   author: "",
   icon: "fingerprint",
   tags: "strip,slashes,remove",
@@ -9583,7 +9591,7 @@ scripts.push({
     {
         "api":1,
         "name":"SHA512 Hash",
-        "description":"Computes the SHA512 hash of your text (Hex encoded)",
+        "description":"Generates SHA512 hash of text in hexadecimal format",
         "icon":"fingerprint",
         "tags":"strip,slashes,remove"
     }
@@ -9602,7 +9610,7 @@ function main(state) {
 
 scripts.push({
   name: "Shuffle characters",
-  description: "Shuffles characters randomly",
+  description: "Randomly shuffles all characters in text",
   author: "Christian Petersen",
   icon: "dice",
   tags: "shuffle,random,character,char",
@@ -9611,7 +9619,7 @@ scripts.push({
 {
   "api": 1,
   "name": "Shuffle characters",
-  "description": "Shuffles characters randomly",
+  "description": "Randomly shuffles all characters in text",
   "author": "Christian Petersen",
   "icon": "dice",
   "tags": "shuffle,random,character,char"
@@ -9638,7 +9646,7 @@ function main(input) {
 
 scripts.push({
   name: "Shuffle Lines",
-  description: "Randomize each line of your text.",
+  description: "Randomly shuffles the order of lines",
   author: "@Clarko",
   icon: "dice",
   tags: "shuffle,random",
@@ -9647,7 +9655,7 @@ scripts.push({
 	{
 		"api":1,
 		"name":"Shuffle Lines",
-		"description":"Randomize each line of your text.",
+		"description":"Randomly shuffles the order of lines",
 		"author":"@Clarko",
 		"icon":"dice",
 		"tags":"shuffle,random"
@@ -9675,7 +9683,7 @@ function main(input) {
 
 scripts.push({
   name: "Snake Case",
-  description: "converts_your_text_to_snake_case.",
+  description: "Converts text to snake_case format, separating words with underscores",
   author: "Ivan",
   icon: "snake",
   tags: "snake,case,function,lodash",
@@ -9684,7 +9692,7 @@ scripts.push({
 	{
 		"api":1,
 		"name":"Snake Case",
-		"description":"converts_your_text_to_snake_case.",
+		"description":"Converts text to snake_case format, separating words with underscores",
 		"author":"Ivan",
 		"icon":"snake",
 		"tags":"snake,case,function,lodash"
@@ -9705,7 +9713,7 @@ function main(input) {
 
 scripts.push({
   name: "Sort JSON",
-  description: "Sort JSON",
+  description: "Sorts JSON object keys alphabetically and array elements",
   author: "MaDnh",
   icon: "sort-characters",
   tags: "json,sort",
@@ -9714,7 +9722,7 @@ scripts.push({
   {
     "api":1,
     "name":"Sort JSON",
-    "description":"Sort JSON",
+    "description":"Sorts JSON object keys alphabetically and array elements",
     "author":"MaDnh",
     "icon":"sort-characters",
     "tags":"json,sort"
@@ -9780,7 +9788,7 @@ function isPlainObject(value) {
 
 scripts.push({
   name: "Sort lines",
-  description: "Sort lines alphabetically.",
+  description: "Sorts lines alphabetically (toggles reverse if already sorted)",
   author: "Sebastiaan Besselsen",
   icon: "sort-characters",
   tags: "sort,alphabet",
@@ -9789,7 +9797,7 @@ scripts.push({
      {
          "api":1,
          "name":"Sort lines",
-         "description":"Sort lines alphabetically.",
+         "description":"Sorts lines alphabetically (toggles reverse if already sorted)",
          "author":"Sebastiaan Besselsen",
          "icon":"sort-characters",
          "tags":"sort,alphabet"
@@ -9813,7 +9821,7 @@ function main(input) {
 
 scripts.push({
   name: "Spaces to Tabs",
-  description: "Converts leading spaces to tabs (2 or 4 spaces)",
+  description: "Converts leading spaces to tabs, auto-detecting 2 or 4-space indentation",
   author: "Flxify",
   icon: "indent",
   tags: "spaces,tabs,indent,convert,whitespace",
@@ -9822,7 +9830,7 @@ scripts.push({
   {
     "api": 1,
     "name": "Spaces to Tabs",
-    "description": "Converts leading spaces to tabs (2 or 4 spaces)",
+    "description": "Converts leading spaces to tabs, auto-detecting 2 or 4-space indentation",
     "author": "Flxify",
     "icon": "indent",
     "tags": "spaces,tabs,indent,convert,whitespace"
@@ -9859,7 +9867,7 @@ function main(state) {
 
 scripts.push({
   name: "Sponge Case",
-  description: "CoNvERtS yoUR Text To A HIghER fOrM Of CoMMUnICAtIOn",
+  description: "Randomly alternates uppercase and lowercase letters for sarcastic mocking",
   author: "Paul Seelman",
   icon: "pineapple",
   tags: "bob,sarcasm,no,this,is,patrick",
@@ -9868,7 +9876,7 @@ scripts.push({
 {
   "api": 1,
   "name": "Sponge Case",
-  "description": "CoNvERtS yoUR Text To A HIghER fOrM Of CoMMUnICAtIOn",
+  "description": "Randomly alternates uppercase and lowercase letters for sarcastic mocking",
   "author": "Paul Seelman",
   "icon": "pineapple",
   "tags": "bob,sarcasm,no,this,is,patrick"
@@ -9898,7 +9906,7 @@ function main(input) {
 
 scripts.push({
   name: "Start Case",
-  description: "Converts Your Text To Start Case.",
+  description: "Converts text to Start Case, capitalizing the first letter of each word",
   author: "Ivan",
   icon: "type",
   tags: "start,case,function,lodash",
@@ -9907,7 +9915,7 @@ scripts.push({
 	{
 		"api":1,
 		"name":"Start Case",
-		"description":"Converts Your Text To Start Case.",
+		"description":"Converts text to Start Case, capitalizing the first letter of each word",
 		"author":"Ivan",
 		"icon":"type",
 		"tags":"start,case,function,lodash"
@@ -9928,7 +9936,7 @@ function main(input) {
 
 scripts.push({
   name: "Sum All",
-  description: "Sums up a list of numbers.",
+  description: "Sums all numbers in text and displays calculation with total",
   author: "Annie Tran",
   icon: "abacus",
   tags: "sum,calculator,addition,add",
@@ -9937,7 +9945,7 @@ scripts.push({
 	{
 		"api":1,
 		"name":"Sum All",
-		"description":"Sums up a list of numbers.",
+		"description":"Sums all numbers in text and displays calculation with total",
 		"author":"Annie Tran",
 		"icon":"abacus",
 		"tags":"sum,calculator,addition,add"
@@ -10005,7 +10013,7 @@ function calculate(s) {
 
 scripts.push({
   name: "Tabs to Spaces",
-  description: "Converts leading tabs to spaces (2 spaces per tab)",
+  description: "Converts leading tabs to 2-space indentation",
   author: "Flxify",
   icon: "indent",
   tags: "tabs,spaces,indent,convert,whitespace",
@@ -10014,7 +10022,7 @@ scripts.push({
   {
     "api": 1,
     "name": "Tabs to Spaces",
-    "description": "Converts leading tabs to spaces (2 spaces per tab)",
+    "description": "Converts leading tabs to 2-space indentation",
     "author": "Flxify",
     "icon": "indent",
     "tags": "tabs,spaces,indent,convert,whitespace"
@@ -10041,7 +10049,7 @@ function main(state) {
 
 scripts.push({
   name: "Test Script",
-  description: "Testing script",
+  description: "Developer test script demonstrating syntax highlighting and features",
   author: "Ivan",
   icon: "flask",
   tags: "test,test,one,two",
@@ -10050,7 +10058,7 @@ scripts.push({
 	{
 		"api":1,
 		"name":"Test Script",
-		"description":"Testing script",
+		"description":"Developer test script demonstrating syntax highlighting and features",
 		"author":"Ivan",
 		"icon":"flask",
 		"tags":"test,test,one,two"
@@ -10101,7 +10109,7 @@ This line was added on Fri, 19 Jun 2020 01:01:30 GMT
 
 scripts.push({
   name: "Time to seconds",
-  description: "Convert hh:mm:ss to seconds",
+  description: "Converts time duration (hh:mm:ss) to total seconds",
   author: "PeteChu",
   icon: "watch",
   tags: "transform,convert",
@@ -10110,7 +10118,7 @@ scripts.push({
   {
     "api":1,
     "name":"Time to seconds",
-    "description":"Convert hh:mm:ss to seconds",
+    "description":"Converts time duration (hh:mm:ss) to total seconds",
     "author":"PeteChu",
     "icon":"watch",
     "tags":"transform,convert"
@@ -10131,7 +10139,7 @@ function main(input) {
 
 scripts.push({
   name: "Trim",
-  description: "Trims leading and trailing whitespace.",
+  description: "Removes whitespace from the beginning and end of text",
   author: "Joshua Nozzi",
   icon: "scissors",
   tags: "trim,whitespace,empty,space",
@@ -10140,7 +10148,7 @@ scripts.push({
 	{
 		"api":1,
 		"name":"Trim",
-		"description":"Trims leading and trailing whitespace.",
+		"description":"Removes whitespace from the beginning and end of text",
 		"author":"Joshua Nozzi",
 		"icon":"scissors",
 		"tags":"trim,whitespace,empty,space",
@@ -10159,7 +10167,7 @@ function main(state) {
 
 scripts.push({
   name: "Trim End",
-  description: "Trims trailing whitespace.",
+  description: "Removes whitespace from the end of text",
   author: "Joshua Nozzi",
   icon: "scissors",
   tags: "trim,end,right,trailing,whitespace,empty,space",
@@ -10168,7 +10176,7 @@ scripts.push({
 	{
 		"api":1,
 		"name":"Trim End",
-		"description":"Trims trailing whitespace.",
+		"description":"Removes whitespace from the end of text",
 		"author":"Joshua Nozzi",
 		"icon":"scissors",
 		"tags":"trim,end,right,trailing,whitespace,empty,space",
@@ -10187,7 +10195,7 @@ function main(state) {
 
 scripts.push({
   name: "Trim Start",
-  description: "Trims leading whitespace.",
+  description: "Removes whitespace from the beginning of text",
   author: "Joshua Nozzi",
   icon: "scissors",
   tags: "trim,start,left,leading,beginning,whitespace,empty,space",
@@ -10196,7 +10204,7 @@ scripts.push({
 	{
 		"api":1,
 		"name":"Trim Start",
-		"description":"Trims leading whitespace.",
+		"description":"Removes whitespace from the beginning of text",
 		"author":"Joshua Nozzi",
 		"icon":"scissors",
 		"tags":"trim,start,left,leading,beginning,whitespace,empty,space",
@@ -10215,7 +10223,7 @@ function main(state) {
 
 scripts.push({
   name: "URL Decode",
-  description: "Decodes URL entities in your text.",
+  description: "Decodes URL-encoded characters (e.g., %20 to space)",
   author: "Ivan",
   icon: "link",
   tags: "url,decode,convert",
@@ -10224,7 +10232,7 @@ scripts.push({
 	{
 		"api":1,
 		"name":"URL Decode",
-		"description":"Decodes URL entities in your text.",
+		"description":"Decodes URL-encoded characters (e.g., %20 to space)",
 		"author":"Ivan",
 		"icon":"link",
 		"tags":"url,decode,convert"
@@ -10243,7 +10251,7 @@ function main(input) {
 
 scripts.push({
   name: "URL Encode",
-  description: "Encodes URL entities in your text.",
+  description: "Encodes special characters for safe use in URLs",
   author: "Ivan",
   icon: "link",
   tags: "url,encode,convert",
@@ -10252,7 +10260,7 @@ scripts.push({
 	{
 		"api":1,
 		"name":"URL Encode",
-		"description":"Encodes URL entities in your text.",
+		"description":"Encodes special characters for safe use in URLs",
 		"author":"Ivan",
 		"icon":"link",
 		"tags":"url,encode,convert"
@@ -10271,7 +10279,7 @@ function main(input) {
 
 scripts.push({
   name: "URL Entities Decode",
-  description: "URL Decodes all characters in your text.",
+  description: "Decodes percent-encoded characters (e.g., %48%65%6C%6C%6F to Hello)",
   author: "luisfontes19",
   icon: "percentage",
   tags: "url,decode,full",
@@ -10280,7 +10288,7 @@ scripts.push({
 	{
 		"api":1,
 		"name":"URL Entities Decode",
-		"description":"URL Decodes all characters in your text.",
+		"description":"Decodes percent-encoded characters (e.g., %48%65%6C%6C%6F to Hello)",
 		"author":"luisfontes19",
 		"icon":"percentage",
 		"tags":"url,decode,full",
@@ -10310,7 +10318,7 @@ function main(state) {
 
 scripts.push({
   name: "URL Entity Encode",
-  description: "URL Encodes all characters in your text.",
+  description: "Encodes every character to percent-encoded format",
   author: "luisfontes19",
   icon: "percentage",
   tags: "url,encode,full",
@@ -10319,7 +10327,7 @@ scripts.push({
     {
         "api":1,
         "name":"URL Entity Encode",
-        "description":"URL Encodes all characters in your text.",
+        "description":"Encodes every character to percent-encoded format",
         "author":"luisfontes19",
         "icon":"percentage",
         "tags":"url,encode,full",
@@ -10349,7 +10357,7 @@ function main(state) {
 
 scripts.push({
   name: "UUID Generator",
-  description: "Generates random v4 UUIDs",
+  description: "Generates random v4 UUIDs. Select a number to generate multiple (max 1000)",
   author: "Flxify",
   icon: "shuffle",
   tags: "uuid,guid,random,generate,id",
@@ -10358,7 +10366,7 @@ scripts.push({
   {
     "api": 1,
     "name": "UUID Generator",
-    "description": "Generates random v4 UUIDs",
+    "description": "Generates random v4 UUIDs. Select a number to generate multiple (max 1000)",
     "author": "Flxify",
     "icon": "shuffle",
     "tags": "uuid,guid,random,generate,id"
@@ -10381,18 +10389,21 @@ function main(state) {
            hex[10] + hex[11] + hex[12] + hex[13] + hex[14] + hex[15];
   }
 
-  var count = 1;
-  var trimmed = state.text.trim();
-  if (trimmed.length > 0 && !isNaN(trimmed) && parseInt(trimmed) > 0) {
-    count = parseInt(trimmed);
-    if (count > 1000) count = 1000;
+  if (state.isSelection) {
+    var count = 1;
+    var trimmed = state.text.trim();
+    if (trimmed.length > 0 && !isNaN(trimmed) && parseInt(trimmed) > 0) {
+      count = parseInt(trimmed);
+      if (count > 1000) count = 1000;
+    }
+    var uuids = [];
+    for (var i = 0; i < count; i++) {
+      uuids.push(generateUUID());
+    }
+    state.text = uuids.join('\n');
+  } else {
+    state.insert(generateUUID());
   }
-
-  var uuids = [];
-  for (var i = 0; i < count; i++) {
-    uuids.push(generateUUID());
-  }
-  state.text = uuids.join('\n');
 }
 
     if (typeof main === "function") main(state);
@@ -10401,7 +10412,7 @@ function main(state) {
 
 scripts.push({
   name: "Upcase",
-  description: "Converts your text to uppercase.",
+  description: "Converts all text to uppercase",
   author: "Dan2552",
   icon: "type",
   tags: "upcase,uppercase,capital,capitalize,capitalization",
@@ -10410,7 +10421,7 @@ scripts.push({
     {
         "api":1,
         "name":"Upcase",
-        "description":"Converts your text to uppercase.",
+        "description":"Converts all text to uppercase",
         "author":"Dan2552",
         "icon":"type",
         "tags":"upcase,uppercase,capital,capitalize,capitalization"
@@ -10429,7 +10440,7 @@ function main(input) {
 
 scripts.push({
   name: "Wadsworth Constant",
-  description: "first 30% of your text.",
+  description: "Removes first 30% of text (Wadsworth Constant: skip boring intro)",
   author: "Ivan",
   icon: "scissors",
   tags: "snap",
@@ -10438,7 +10449,7 @@ scripts.push({
 	{
 		"api":1,
 		"name":"Wadsworth Constant",
-		"description":"first 30% of your text.",
+		"description":"Removes first 30% of text (Wadsworth Constant: skip boring intro)",
 		"author":"Ivan",
 		"icon":"scissors",
 		"tags":"snap"
@@ -10458,7 +10469,7 @@ function main(state) {
 
 scripts.push({
   name: "Well-Known Binary to Text",
-  description: "Converts your hex encoded WKB (any endian) to WKB, wkb2wkt",
+  description: "Converts hex-encoded Well-Known Binary (WKB) to Well-Known Text (WKT) format",
   author: "Mikael Brassman (Twitter: @spoike)",
   icon: "globe",
   tags: "wkb,convert,wkt,binary,hex,wkb2wkt",
@@ -10467,7 +10478,7 @@ scripts.push({
   {
     "api":1,
     "name":"Well-Known Binary to Text",
-    "description":"Converts your hex encoded WKB (any endian) to WKB, wkb2wkt",
+    "description":"Converts hex-encoded Well-Known Binary (WKB) to Well-Known Text (WKT) format",
     "author":"Mikael Brassman (Twitter: @spoike)",
     "icon":"globe",
     "tags":"wkb,convert,wkt,binary,hex,wkb2wkt"
@@ -10641,7 +10652,7 @@ function getDouble(str, pos, littleEndian) {
 
 scripts.push({
   name: "Well-Known Text to Binary",
-  description: "Converts your WKT to little endian WKB (hex encoded), wkt2wkb",
+  description: "Converts Well-Known Text (WKT) to hex-encoded Well-Known Binary (WKB) format",
   author: "Mikael Brassman (Twitter: @spoike)",
   icon: "globe",
   tags: "wkb,convert,wkt,binary,little endian,hex,wkt2wkb",
@@ -10650,7 +10661,7 @@ scripts.push({
   {
     "api":1,
     "name":"Well-Known Text to Binary",
-    "description":"Converts your WKT to little endian WKB (hex encoded), wkt2wkb",
+    "description":"Converts Well-Known Text (WKT) to hex-encoded Well-Known Binary (WKB) format",
     "author":"Mikael Brassman (Twitter: @spoike)",
     "icon":"globe",
     "tags":"wkb,convert,wkt,binary,little endian,hex,wkt2wkb"
@@ -10864,7 +10875,7 @@ function asHex(view, length) {
 
 scripts.push({
   name: "YAML to JSON",
-  description: "Converts YAML to JSON.",
+  description: "Converts YAML format to JSON",
   author: "Ivan",
   icon: "metamorphose",
   tags: "markup,convert",
@@ -10873,7 +10884,7 @@ scripts.push({
 	{
 		"api":1,
 		"name":"YAML to JSON",
-		"description":"Converts YAML to JSON.",
+		"description":"Converts YAML format to JSON",
 		"author":"Ivan",
 		"icon":"metamorphose",
 		"tags":"markup,convert"
@@ -10899,7 +10910,7 @@ function main(input) {
 
 scripts.push({
   name: "Contrasting Color",
-  description: "Determine whether black or white contrasts better with the given color(s) (one per line).",
+  description: "Determines best contrasting text color (black/white) for hex colors with WCAG ratios",
   author: "Sunny Walker",
   icon: "color-wheel",
   tags: "contrast,color,wcag",
@@ -10908,7 +10919,7 @@ scripts.push({
 {
     "api": 1,
     "name": "Contrasting Color",
-    "description": "Determine whether black or white contrasts better with the given color(s) (one per line).",
+    "description": "Determines best contrasting text color (black/white) for hex colors with WCAG ratios",
     "author": "Sunny Walker",
     "icon": "color-wheel",
     "tags": "contrast,color,wcag"
@@ -10976,7 +10987,7 @@ const betterColor = hex => {
 
 scripts.push({
   name: "Convert to pretty markdown table",
-  description: "Converts csv, tsv or markdown table into pretty markdown table format.",
+  description: "Converts CSV, TSV, or markdown tables to formatted markdown table with aligned columns",
   author: "xshoji",
   icon: "term",
   tags: "csv,tsv,md,markdown",
@@ -10985,7 +10996,7 @@ scripts.push({
 {
   "api":1,
   "name":"Convert to pretty markdown table",
-  "description":"Converts csv, tsv or markdown table into pretty markdown table format.",
+  "description":"Converts CSV, TSV, or markdown tables to formatted markdown table with aligned columns",
   "author":"xshoji",
   "icon":"term",
   "tags":"csv,tsv,md,markdown"
@@ -11036,7 +11047,7 @@ function convertToPrettyMarkdownTableFormat(input) {
 
 scripts.push({
   name: "Generate hashtag",
-  description: "Generate hashtag from a word or sentence",
+  description: "Converts text to camelCase hashtag format by removing special characters",
   author: "Armand Salle",
   icon: "metamorphose",
   tags: "hashtag,word",
@@ -11045,7 +11056,7 @@ scripts.push({
 {
   "api": 1,
   "name": "Generate hashtag",
-  "description": "Generate hashtag from a word or sentence",
+  "description": "Converts text to camelCase hashtag format by removing special characters",
   "author": "Armand Salle",
   "icon": "metamorphose",
   "tags": "hashtag,word"
@@ -11083,7 +11094,7 @@ function main(input) {
 
 scripts.push({
   name: "JS To PHP",
-  description: "Convert JS Object or Array to PHP.",
+  description: "Converts JavaScript objects or arrays to PHP array syntax",
   author: "jtolj",
   icon: "elephant",
   tags: "js,php,convert",
@@ -11092,7 +11103,7 @@ scripts.push({
 	{
 		"api":1,
 		"name":"JS To PHP",
-		"description":"Convert JS Object or Array to PHP.",
+		"description":"Converts JavaScript objects or arrays to PHP array syntax",
 		"author":"jtolj",
 		"icon":"elephant",
 		"tags":"js,php,convert"
@@ -11149,7 +11160,7 @@ const convert = function (result, indentation = 1) {
 
 scripts.push({
   name: "List to HTML list",
-  description: "Turns comma separated list to HTML Lists",
+  description: "Converts comma-separated list to HTML unordered list and vice versa",
   author: "Christian Heilmann",
   icon: "table",
   tags: "HTML,Lists",
@@ -11158,7 +11169,7 @@ scripts.push({
 {
   "api": 1,
   "name": "List to HTML list",
-  "description": "Turns comma separated list to HTML Lists",
+  "description": "Converts comma-separated list to HTML unordered list and vice versa",
   "author": "Christian Heilmann",
   "icon": "table",
   "tags": "HTML,Lists"
@@ -11191,7 +11202,7 @@ function main(input) {
 
 scripts.push({
   name: "RGB to Hex",
-  description: "Convert color in RGB to hexadecimal",
+  description: "Converts RGB color values to hex format (e.g., 255,87,51 to #FF5733)",
   author: "luisfontes19",
   icon: "color-wheel",
   tags: "rgb,hex,convert,color",
@@ -11200,7 +11211,7 @@ scripts.push({
   {
     "api":1,
     "name":"RGB to Hex",
-    "description":"Convert color in RGB to hexadecimal",
+    "description":"Converts RGB color values to hex format (e.g., 255,87,51 to #FF5733)",
     "author":"luisfontes19",
     "icon":"color-wheel",
     "tags":"rgb,hex,convert,color"
@@ -11234,7 +11245,7 @@ function main(state) {
 
 scripts.push({
   name: "To Unicode Escaped String",
-  description: "Converts a UTF8 string to unicode escape chars(js format)",
+  description: "Converts text to Unicode escape sequences (\\uXXXX format)",
   author: "luisfontes19",
   icon: "broom",
   tags: "string,unicode,convert,escape",
@@ -11244,7 +11255,7 @@ scripts.push({
   {
     "api":1,
     "name":"To Unicode Escaped String",
-    "description":"Converts a UTF8 string to unicode escape chars(js format)",
+    "description":"Converts text to Unicode escape sequences (\\uXXXX format)",
     "author":"luisfontes19",
     "icon":"broom",
     "tags":"string,unicode,convert,escape"
@@ -11270,7 +11281,7 @@ function toUnicode(str) {
 
 scripts.push({
   name: "Toggle Camel and Hyphen",
-  description: "Turns camelCase to camel-case and vice versa",
+  description: "Toggles between camelCase and hyphen-case (kebab-case)",
   author: "Christian Heilmann",
   icon: "table",
   tags: "camelcase,hyphencase,syntax,codestandards",
@@ -11279,7 +11290,7 @@ scripts.push({
 {
   "api": 1,
   "name": "Toggle Camel and Hyphen",
-  "description": "Turns camelCase to camel-case and vice versa",
+  "description": "Toggles between camelCase and hyphen-case (kebab-case)",
   "author": "Christian Heilmann",
   "icon": "table",
   "tags": "camelcase,hyphencase,syntax,codestandards"
@@ -11317,7 +11328,7 @@ function main(input) {
 
 scripts.push({
   name: "TSV to JSON",
-  description: "Converts TSV to JSON",
+  description: "Converts tab-separated values to JSON array of objects",
   author: "Quddus George",
   icon: "table",
   tags: "tab, tsv, json, table",
@@ -11326,7 +11337,7 @@ scripts.push({
   {
     "api":1,
     "name":"TSV to JSON",
-    "description":"Converts TSV to JSON",
+    "description":"Converts tab-separated values to JSON array of objects",
     "author":"Quddus George",
     "icon":"table",
     "tags":"tab, tsv, json, table"
@@ -11530,6 +11541,26 @@ function filterScripts(query) {
   renderResults();
 }
 
+var animalEmojis = [
+  '🐶','🐱','🐭','🐹','🐰','🦊','🐻','🐼','🐨','🐯',
+  '🦁','🐮','🐷','🐸','🐵','🐔','🐧','🐦','🦆','🦅',
+  '🦉','🐺','🐗','🐴','🦄','🐝','🦋','🐌','🐞','🐢',
+  '🐍','🦎','🐙','🦑','🦐','🦀','🐡','🐠','🐟','🐬',
+  '🐳','🦈','🐊','🐆','🦓','🦍','🐘','🦛','🦏','🐪',
+  '🦒','🦘','🐃','🐄','🐎','🐖','🐏','🐑','🦙','🐐',
+  '🦌','🐕','🐩','🐈','🦃','🦚','🦜','🦢','🦩','🐇',
+  '🦝','🦨','🦦','🦥','🐁','🐿','🦔','🦫','🕊','🐓'
+];
+
+function getScriptEmoji(name) {
+  var hash = 0;
+  for (var i = 0; i < name.length; i++) {
+    hash = ((hash << 5) - hash) + name.charCodeAt(i);
+    hash |= 0;
+  }
+  return animalEmojis[Math.abs(hash) % animalEmojis.length];
+}
+
 function renderResults() {
   resultsList.innerHTML = '';
   filteredScripts.forEach(function(script, index) {
@@ -11538,7 +11569,7 @@ function renderResults() {
 
     var nameSpan = document.createElement('span');
     nameSpan.className = 'script-name';
-    nameSpan.textContent = script.name;
+    nameSpan.textContent = getScriptEmoji(script.name) + '  ' + script.name;
 
     var descSpan = document.createElement('span');
     descSpan.className = 'script-desc';
@@ -11628,6 +11659,37 @@ document.querySelectorAll('.faq-question').forEach(function(q) {
   });
 });
 
+// Mobile menu button
+var mobileBtn = document.getElementById('mobile-menu-btn');
+if (mobileBtn) mobileBtn.addEventListener('click', showPalette);
+
+// Theme toggle (CSS class + localStorage + optional CM theme switch)
+var themeBtn = document.getElementById('theme-toggle');
+if (themeBtn) {
+  // Apply saved theme on load
+  try {
+    if (localStorage.getItem('flxify-theme') === 'light') {
+      document.body.classList.add('light-mode');
+    }
+  } catch(e) {}
+
+  themeBtn.addEventListener('click', function() {
+    var goLight = !document.body.classList.contains('light-mode');
+    document.body.classList.toggle('light-mode', goLight);
+    try { localStorage.setItem('flxify-theme', goLight ? 'light' : 'dark'); } catch(e) {}
+    // Switch CodeMirror theme if available
+    var cm = window.cmEditor;
+    var conf = window.flxifyThemeConf;
+    if (cm && conf) {
+      var theme = goLight ? window.flxifyLightTheme : window.flxifyDarkTheme;
+      if (theme) cm.dispatch({ effects: conf.reconfigure([theme]) });
+    }
+    // Update theme-color meta tag
+    var tc = document.querySelector('meta[name="theme-color"]');
+    if (tc) tc.setAttribute('content', goLight ? '#f5f5f5' : '#252526');
+  });
+}
+
 // Directory search filter
 var dirSearch = document.getElementById('directory-search');
 if (dirSearch) {
@@ -11643,6 +11705,11 @@ if (dirSearch) {
       section.style.display = visible.length > 0 ? '' : 'none';
     });
   });
+}
+
+// Service worker registration
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/service-worker.js').catch(function() {});
 }
 
 })();

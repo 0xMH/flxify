@@ -2,7 +2,7 @@
 	{
 		"api":1,
 		"name":"Minify XML",
-		"description":"Cleans and minifies XML/HTML documents.",
+		"description":"Removes whitespace and comments to compress XML and HTML",
 		"author":"Ivan",
 		"icon":"broom",
 		"tags":"html,minify,clean,indent",

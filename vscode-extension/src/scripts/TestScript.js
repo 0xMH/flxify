@@ -2,7 +2,7 @@
 	{
 		"api":1,
 		"name":"Test Script",
-		"description":"Testing script",
+		"description":"Developer test script demonstrating syntax highlighting and features",
 		"author":"Ivan",
 		"icon":"flask",
 		"tags":"test,test,one,two"

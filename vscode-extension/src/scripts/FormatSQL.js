@@ -2,7 +2,7 @@
 	{
 		"api":1,
 		"name":"Format SQL",
-		"description":"Cleans and format SQL queries.",
+		"description":"Formats SQL queries with proper indentation and line breaks",
 		"author":"Ivan",
 		"icon":"broom",
 		"tags":"mysql,sql,prettify,clean,indent",

@@ -2,7 +2,7 @@
 	{
 		"api":1,
 		"name":"Count Lines",
-		"description":"Get the line count of your text",
+		"description":"Counts the total number of lines in text",
 		"author":"andipaetzold",
 		"icon":"counter",
 		"tags":"count,length,size,line"

@@ -2,7 +2,7 @@
   {
     "api": 1,
     "name": "Remove Line Numbers",
-    "description": "Strips line number prefixes from your text",
+    "description": "Removes line number prefixes from each line",
     "author": "Flxify",
     "icon": "eraser",
     "tags": "line,number,remove,strip,clean"

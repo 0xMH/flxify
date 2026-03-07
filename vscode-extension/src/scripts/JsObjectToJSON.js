@@ -2,7 +2,7 @@
     {
         "api":1,
         "name":"JS Object to JSON",
-        "description":"Converts a javascript object to JSON format",
+        "description":"Converts JavaScript object literals to valid JSON format",
         "author":"luisfontes19",
         "icon":"HTML",
         "tags":"json,js,object,convert",

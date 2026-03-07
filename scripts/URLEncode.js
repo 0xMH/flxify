@@ -2,7 +2,7 @@
 	{
 		"api":1,
 		"name":"URL Encode",
-		"description":"Encodes URL entities in your text.",
+		"description":"Encodes special characters for safe use in URLs",
 		"author":"Ivan",
 		"icon":"link",
 		"tags":"url,encode,convert"

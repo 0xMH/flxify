@@ -2,7 +2,7 @@
 	{
 		"api":1,
 		"name":"Deburr",
-		"description":"Converts your text to basic latin characters.",
+		"description":"Removes accents and diacritics, converting to basic Latin characters",
 		"author":"Ivan",
 		"icon":"colosseum",
 		"tags":"burr,special,characters,function,lodash"

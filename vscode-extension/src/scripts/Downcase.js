@@ -2,7 +2,7 @@
     {
         "api":1,
         "name":"Downcase",
-        "description":"Converts your text to lowercase.",
+        "description":"Converts all text to lowercase",
         "author":"Dan2552",
         "icon":"type",
         "tags":"downcase,lowercase"

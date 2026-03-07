@@ -2,7 +2,7 @@
   {
     "api":1,
     "name":"Well-Known Binary to Text",
-    "description":"Converts your hex encoded WKB (any endian) to WKB, wkb2wkt",
+    "description":"Converts hex-encoded Well-Known Binary (WKB) to Well-Known Text (WKT) format",
     "author":"Mikael Brassman (Twitter: @spoike)",
     "icon":"globe",
     "tags":"wkb,convert,wkt,binary,hex,wkb2wkt"

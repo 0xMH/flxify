@@ -2,7 +2,7 @@
   {
     "api":1,
     "name":"PHP Unserialize",
-    "description":"Convert PHP serialized data to JSON",
+    "description":"Converts PHP serialized data to JSON format",
     "author":"Rob Bogie",
     "icon":"elephant",
     "tags":"php,serialize,unserialize,json"

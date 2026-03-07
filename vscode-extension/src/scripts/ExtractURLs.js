@@ -2,7 +2,7 @@
   {
     "api": 1,
     "name": "Extract URLs",
-    "description": "Extracts all URLs from your text",
+    "description": "Extracts all unique HTTP/HTTPS URLs from text, one per line",
     "author": "Flxify",
     "icon": "link",
     "tags": "url,link,extract,http,https,scrape"

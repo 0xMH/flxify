@@ -2,7 +2,7 @@
 	{
 		"api":1,
 		"name":"Snake Case",
-		"description":"converts_your_text_to_snake_case.",
+		"description":"Converts text to snake_case format, separating words with underscores",
 		"author":"Ivan",
 		"icon":"snake",
 		"tags":"snake,case,function,lodash"

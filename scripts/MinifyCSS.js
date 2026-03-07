@@ -2,7 +2,7 @@
 	{
 		"api":1,
 		"name":"Minify CSS",
-		"description":"Cleans and minifies CSS stylesheets.",
+		"description":"Removes whitespace and comments to compress CSS",
 		"author":"Ivan",
 		"icon":"broom",
 		"tags":"css,minify,clean,indent",

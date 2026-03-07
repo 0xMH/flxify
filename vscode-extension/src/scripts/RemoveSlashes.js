@@ -2,7 +2,7 @@
 	{
 		"api":1,
 		"name":"Remove Slashes",
-		"description":"Unescapes your text.",
+		"description":"Removes backslash escapes from quotes and special characters",
 		"author":"Ivan",
 		"icon":"quote",
 		"tags":"strip,slashes,remove,unescape"

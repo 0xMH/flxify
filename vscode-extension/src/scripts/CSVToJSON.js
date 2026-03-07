@@ -2,7 +2,7 @@
 	{
 		"api":2,
 		"name":"CSV to JSON",
-		"description":"Converts comma-separated tables to JSON.",
+		"description":"Converts CSV to JSON array of objects using first row as headers",
 		"author":"Ivan",
 		"icon":"table",
 		"tags":"table,convert",

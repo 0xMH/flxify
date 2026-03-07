@@ -2,7 +2,7 @@
      {
          "api":1,
          "name":"Natural Sort Lines",
-         "description":"Sort lines with smart handling of numbers.",
+         "description":"Sorts lines alphabetically with natural number ordering (1, 2, 10 not 1, 10, 2)",
          "author":"Sebastiaan Besselsen",
          "icon":"sort-numbers",
          "tags":"sort,natural,natsort"

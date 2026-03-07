@@ -2,7 +2,7 @@
 	{
 		"api":1,
 		"name":"Base64 Decode",
-		"description":"Decodes your text from Base64",
+		"description":"Decodes Base64-encoded text back to plain text",
 		"author":"See Source",
 		"icon":"metamorphose",
 		"tags":"base64,btoa,decode"

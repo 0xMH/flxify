@@ -2,7 +2,7 @@
   {
     "api":1,
     "name":"Rot13",
-    "description":"Applies the Rot13 cypher to your text.",
+    "description":"Applies ROT13 cipher, shifting letters by 13 positions (reversible)",
     "author":"Paul Starr",
     "icon":"roman",
     "tags":"spoilers,encryption,plaintext"

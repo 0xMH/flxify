@@ -2,7 +2,7 @@
 	{
 		"api":1,
 		"name":"URL Entities Decode",
-		"description":"URL Decodes all characters in your text.",
+		"description":"Decodes percent-encoded characters (e.g., %48%65%6C%6C%6F to Hello)",
 		"author":"luisfontes19",
 		"icon":"percentage",
 		"tags":"url,decode,full",

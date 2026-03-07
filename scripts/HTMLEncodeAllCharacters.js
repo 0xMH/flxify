@@ -2,7 +2,7 @@
     {
         "api":1,
         "name":"HTML Encode all characters",
-        "description":"HTML Encodes every character in your text",
+        "description":"Encodes every character to HTML numeric entities for obfuscation",
         "author":"Ivan",
         "icon":"HTML",
         "tags":"html,encode,web,email",

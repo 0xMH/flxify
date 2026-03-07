@@ -2,7 +2,7 @@
     {
         "api":1,
         "name":"Markdown Quote",
-        "description":"Adds > to the start of every line of your text.",
+        "description":"Prefixes each line with > to create markdown blockquotes",
         "author":"Dan2552",
         "icon":"term",
         "tags":"quote,markdown"

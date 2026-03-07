@@ -2,7 +2,7 @@
 	{
 		"api":1,
 		"name":"JS To PHP",
-		"description":"Convert JS Object or Array to PHP.",
+		"description":"Converts JavaScript objects or arrays to PHP array syntax",
 		"author":"jtolj",
 		"icon":"elephant",
 		"tags":"js,php,convert"

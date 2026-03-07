@@ -2,7 +2,7 @@
 	{
 		"api":1,
 		"name":"Minify JSON",
-		"description":"Cleans and minifies JSON documents.",
+		"description":"Removes whitespace to compress JSON into a single line",
 		"author":"riesentoaster",
 		"icon":"broom",
 		"tags":"html,minify,clean,indent",

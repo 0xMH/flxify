@@ -11,3 +11,4 @@ tsconfig.json
 CLAUDE.md
 PLAN.MD
 *.vsix
+bin/**

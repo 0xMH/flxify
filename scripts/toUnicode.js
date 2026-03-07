@@ -3,7 +3,7 @@
   {
     "api":1,
     "name":"To Unicode Escaped String",
-    "description":"Converts a UTF8 string to unicode escape chars(js format)",
+    "description":"Converts text to Unicode escape sequences (\\uXXXX format)",
     "author":"luisfontes19",
     "icon":"broom",
     "tags":"string,unicode,convert,escape"

@@ -2,7 +2,7 @@
 {
   "api": 1,
   "name": "Toggle Camel and Hyphen",
-  "description": "Turns camelCase to camel-case and vice versa",
+  "description": "Toggles between camelCase and hyphen-case (kebab-case)",
   "author": "Christian Heilmann",
   "icon": "table",
   "tags": "camelcase,hyphencase,syntax,codestandards"

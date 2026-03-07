@@ -2,7 +2,7 @@
   {
     "api":1,
     "name":"Time to seconds",
-    "description":"Convert hh:mm:ss to seconds",
+    "description":"Converts time duration (hh:mm:ss) to total seconds",
     "author":"PeteChu",
     "icon":"watch",
     "tags":"transform,convert"

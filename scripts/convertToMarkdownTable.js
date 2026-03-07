@@ -2,7 +2,7 @@
 {
   "api":1,
   "name":"Convert to pretty markdown table",
-  "description":"Converts csv, tsv or markdown table into pretty markdown table format.",
+  "description":"Converts CSV, TSV, or markdown tables to formatted markdown table with aligned columns",
   "author":"xshoji",
   "icon":"term",
   "tags":"csv,tsv,md,markdown"

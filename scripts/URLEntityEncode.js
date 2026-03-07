@@ -2,7 +2,7 @@
     {
         "api":1,
         "name":"URL Entity Encode",
-        "description":"URL Encodes all characters in your text.",
+        "description":"Encodes every character to percent-encoded format",
         "author":"luisfontes19",
         "icon":"percentage",
         "tags":"url,encode,full",
