@@ -8,6 +8,14 @@ A web-based developer text utility tool with **110 executable scripts** accessib
 
 **Try it:** [flxify.dev](https://flxify.dev)
 
+## About
+
+Flxify is a **Swiss Army knife for developers** — a lightweight, privacy-first text transformation tool built with no frameworks and zero external dependencies (except CodeMirror for syntax highlighting). Whether you need to format JSON, encode Base64, hash passwords, convert between CSV/JSON/YAML, or run any of 110+ text transformations, Flxify does it in your browser without ever sending data to a server.
+
+The project is open-source and contributor-friendly. It's built on principles of **simplicity, privacy, and offline-first**: no build toolchain complexity, no framework bloat, no tracking. Open the web app from your hard drive or any web server — it just works. Use the VS Code extension for the same 110 scripts inside your editor. Every script is tested (720+ tests), every feature is documented, and the codebase is designed for easy contribution.
+
+Flxify is used by developers, security professionals, data engineers, and anyone who transforms text regularly. It's faster than opening 5 different online tools, more reliable than relying on cloud services, and respects your privacy by keeping everything on your machine.
+
 ## Features
 
 - **110 scripts** for JSON formatting, Base64 encoding, hashing, case conversion, sorting, and more
