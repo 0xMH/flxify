@@ -1,6 +1,6 @@
 # Flxify
 
-[![CI](https://github.com/AhmedEltawworked/flxify/actions/workflows/ci.yml/badge.svg)](https://github.com/AhmedEltawworked/flxify/actions/workflows/ci.yml)
+[![CI](https://github.com/ahmedeltaweel/flxify/actions/workflows/ci.yml/badge.svg)](https://github.com/ahmedeltaweel/flxify/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![VS Code Marketplace](https://img.shields.io/visual-studio-marketplace/v/flxify.flxify)](https://marketplace.visualstudio.com/items?itemName=flxify.flxify)
 
@@ -30,7 +30,7 @@ Install from the [VS Code Marketplace](https://marketplace.visualstudio.com/item
 ### Local Development
 
 ```bash
-git clone https://github.com/AhmedEltawworked/flxify.git
+git clone https://github.com/ahmedeltaweel/flxify.git
 cd flxify
 npm install
 npm run build    # generates app.js + tool pages

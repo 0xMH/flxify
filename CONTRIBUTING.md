@@ -5,7 +5,7 @@ Thanks for your interest in contributing! This guide covers adding scripts, writ
 ## Setup
 
 ```bash
-git clone https://github.com/AhmedEltawworked/flxify.git
+git clone https://github.com/ahmedeltaweel/flxify.git
 cd flxify
 npm install
 ```
