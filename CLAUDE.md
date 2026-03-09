@@ -246,7 +246,11 @@ Flxify also ships as a VS Code extension at `vscode-extension/`. It's a self-con
 
 26. **`bin/` directory must be in `.vscodeignore`.** Go toolchain binaries (`dlv` ~18MB, `gopls` ~37MB) may exist in a `bin/` directory in the workspace. Without `bin/**` in `.vscodeignore`, these get bundled into the VSIX, inflating it by ~55MB.
 
-27. **Vitest v3+ cannot be imported via `require('vitest')`.** Use `globals: true` in vitest.config.js and don't import vitest in test files. Test globals like `describe`, `it`, `expect` are injected automatically.
+27. **Vitest v3+ cannot be imported via `require('vitest')`.** Use `globals: true` in `vitest.config.mjs` and don't import vitest in test files. Test globals like `describe`, `it`, `expect` are injected automatically.
+
+27b. **Vitest config must use `.mjs` extension.** Projects without `"type": "module"` in `package.json` must name the config `vitest.config.mjs` (not `.js`). Otherwise Vitest's CJS loader (`config.cjs`) fails with `ERR_REQUIRE_ESM` because Vite 6+ is ESM-only. This applies to both root and `vscode-extension/`.
+
+27c. **`manifest.json` fails on `file://` protocol.** The `<link rel="manifest">` tag causes CORS errors when opening `index.html` via `file://`. The fix is to load it conditionally: `if(location.protocol!=='file:')` inject the link tag via JS.
 
 28. **Some scripts throw on arbitrary input instead of using `state.postError()`.** MinifyJSON, SumAll, and HexToASCII throw errors when given non-matching input. Bulk tests must exclude these or wrap in try/catch. These are tested individually in `tests/scripts/specific/`.
 
@@ -318,7 +322,7 @@ The project uses Vitest v3+ with `globals: true` (no imports needed in test file
   - `SortLines.test.js`, `JWTDecode.test.js`, `Conversion.test.js`
   - `Generators.test.js`, `Encoding.test.js`
 
-**Configuration:** `vitest.config.js` at project root with `globals: true`, `include: ['tests/**/*.test.js']`, `testTimeout: 10000`.
+**Configuration:** `vitest.config.mjs` at project root with `globals: true`, `include: ['tests/**/*.test.js']`, `testTimeout: 10000`.
 
 ### GitHub Templates
 - `.github/ISSUE_TEMPLATE/` — Issue templates for bug reports and feature requests

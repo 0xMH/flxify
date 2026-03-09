@@ -424,6 +424,10 @@ document.querySelectorAll('.faq-question').forEach(function(q) {
 var mobileBtn = document.getElementById('mobile-menu-btn');
 if (mobileBtn) mobileBtn.addEventListener('click', togglePalette);
 
+// Palette close button (visible on mobile)
+var paletteCloseBtn = document.getElementById('palette-close');
+if (paletteCloseBtn) paletteCloseBtn.addEventListener('click', hidePalette);
+
 // Theme toggle (CSS class + localStorage + optional CM theme switch)
 var themeBtn = document.getElementById('theme-toggle');
 if (themeBtn) {
@@ -714,7 +718,10 @@ for (const entry of seoEntries) {
 
   <div id="command-palette" class="hidden">
     <div id="palette-container">
-      <input id="search" type="text" placeholder="Type a command..." autocomplete="off" spellcheck="false">
+      <div id="palette-header">
+        <input id="search" type="text" placeholder="Type a command..." autocomplete="off" spellcheck="false">
+        <button id="palette-close" type="button" aria-label="Close">&times;</button>
+      </div>
       <ul id="results"></ul>
     </div>
   </div>

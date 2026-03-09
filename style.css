@@ -341,9 +341,36 @@ body.light-mode .theme-toggle .icon-moon {
   box-shadow: var(--shadow-palette);
 }
 
+/* Palette header (search + close) */
+#palette-header {
+  display: flex;
+  align-items: center;
+}
+
+#palette-close {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-secondary);
+  font-size: 22px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+#palette-close:hover {
+  color: var(--text-primary);
+  background: var(--bg-hover-subtle);
+}
+
 /* Search input */
 #search {
-  width: 100%;
+  flex: 1;
+  min-width: 0;
   padding: 14px 16px;
   background: var(--bg-input);
   color: var(--text-primary);
@@ -818,6 +845,10 @@ body.directory-page {
 
   #command-palette {
     padding-top: 0;
+  }
+
+  #palette-close {
+    display: flex;
   }
 
   #palette-container {

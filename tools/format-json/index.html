@@ -69,7 +69,10 @@
 
   <div id="command-palette" class="hidden">
     <div id="palette-container">
-      <input id="search" type="text" placeholder="Type a command..." autocomplete="off" spellcheck="false">
+      <div id="palette-header">
+        <input id="search" type="text" placeholder="Type a command..." autocomplete="off" spellcheck="false">
+        <button id="palette-close" type="button" aria-label="Close">&times;</button>
+      </div>
       <ul id="results"></ul>
     </div>
   </div>
