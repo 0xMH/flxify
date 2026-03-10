@@ -4,6 +4,7 @@
   "private": true,
   "description": "Developer text utility tool with 109 executable scripts",
   "scripts": {
+    "start": "npx serve -s . -l 3000",
     "build": "node build_app.js",
     "test": "vitest run",
     "test:watch": "vitest",
