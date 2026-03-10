@@ -4,6 +4,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![VS Code Marketplace](https://img.shields.io/visual-studio-marketplace/v/flxify.flxify)](https://marketplace.visualstudio.com/items?itemName=flxify.flxify)
 
+[![Deploy to CranL](https://cranl-deploy-button-liov2i.cranl.net/cranls-button.svg)](https://cranl-deploy-button-liov2i.cranl.net/deploy?repo=0xMH/flxify)
+
 A web-based developer text utility tool with **110 executable scripts** accessible via a command palette. Paste text, run a script, get transformed output. Think "Swiss Army knife for text transformations."
 
 **Try it:** [flxify.dev](https://flxify.dev)
